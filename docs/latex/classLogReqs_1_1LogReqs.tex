@@ -1,0 +1,191 @@
+\hypertarget{classLogReqs_1_1LogReqs}{}\doxysection{Log\+Reqs Class Reference}
+\label{classLogReqs_1_1LogReqs}\index{LogReqs@{LogReqs}}
+
+
+Class \mbox{\hyperlink{classLogReqs_1_1LogReqs}{Log\+Reqs}} serves the purpose of logging and hashing requests and responses to json (or yaml) files before sending a request the logger attributes (as listed in constructor) need to be set accordingly if attributes are not set, output in the logs is going to be empty.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classLogReqs_1_1LogReqs_aacd6f48c7da102742977a2d655247c0a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classLogReqs_1_1LogReqs_aa9e289eddb591991c9bc7321dc5b186b}{verbose}})
+\begin{DoxyCompactList}\small\item\em constructor intializes method with \char`\"{}\+GET\char`\"{} so that it does not have to be specified to many of the requests verbose value is passed for use in vprint \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classLogReqs_1_1LogReqs_a8dd1e99f3f1a9dde25047f254b97a11a}{convert\+\_\+json\+\_\+to\+\_\+yaml}} (self, json\+\_\+data, file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em currently unused, converts the json logs to yaml format \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classLogReqs_1_1LogReqs_a63908c0250b1b68fdcd604fa3259f0f5}{get\+\_\+response}} (self)
+\begin{DoxyCompactList}\small\item\em return response body ~\newline
+ \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classLogReqs_1_1LogReqs_a64ed337d5019f3f3015da1c8b2a61cf6}{hash\+\_\+of\+\_\+response}} (self, response\+\_\+str)
+\begin{DoxyCompactList}\small\item\em calculate and return the sha256 hash of the given response \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classLogReqs_1_1LogReqs_ad8f76a6128cd637ff5427bb7a095a19d}{log\+\_\+req\+\_\+res}} (self)
+\begin{DoxyCompactList}\small\item\em should be called after each request that needs to be logged, collects all neccessary data and logs it to a csv-\/file resulting file names look like this\+: YYYY-\/\+MM-\/\+DD\+\_\+\+HH-\/\+MM-\/\+SS\+\_\+manufacturer\+\_\+api\+\_\+call\+\_\+\{response$\vert$info\}.json. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classLogReqs_1_1LogReqs_a1d2362b50b577f5e3c9eca9b44cb48be}{print\+\_\+response}} (self)
+\begin{DoxyCompactList}\small\item\em print responses returned by APIs and print error message if requests was unsuccessful output also depends on value of \char`\"{}self.\+verbose\char`\"{} \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classLogReqs_1_1LogReqs_ae644a6914653084fa3ec00cd9327caf6}{vprint}} (self, $\ast$args)
+\begin{DoxyCompactList}\small\item\em prints args if self.\+verbose is true \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLogReqs_1_1LogReqs_a14d48c2e9f05d0b03044eb45f308fcb0}{body}}
+\item 
+\mbox{\hyperlink{classLogReqs_1_1LogReqs_ae8f626807b2dddc1872b3005556939cd}{header}}
+\item 
+\mbox{\hyperlink{classLogReqs_1_1LogReqs_abed946c62f140eb7ff2ac742e6ad9497}{method}}
+\item 
+\mbox{\hyperlink{classLogReqs_1_1LogReqs_a4bc8f886a9f1544e31feccab665cf8d8}{mf\+\_\+name}}
+\item 
+\mbox{\hyperlink{classLogReqs_1_1LogReqs_a8ab7bcb35ce5bba05608c72da6b4a0d3}{response}}
+\item 
+\mbox{\hyperlink{classLogReqs_1_1LogReqs_afcd5a3e84f2adb7f83fa6c99911f31e4}{url}}
+\item 
+\mbox{\hyperlink{classLogReqs_1_1LogReqs_aa9e289eddb591991c9bc7321dc5b186b}{verbose}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{classLogReqs_1_1LogReqs}{Log\+Reqs}} serves the purpose of logging and hashing requests and responses to json (or yaml) files before sending a request the logger attributes (as listed in constructor) need to be set accordingly if attributes are not set, output in the logs is going to be empty. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLogReqs_1_1LogReqs_aacd6f48c7da102742977a2d655247c0a}\label{classLogReqs_1_1LogReqs_aacd6f48c7da102742977a2d655247c0a}} 
+\index{LogReqs@{LogReqs}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!LogReqs@{LogReqs}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{verbose }\end{DoxyParamCaption})}
+
+
+
+constructor intializes method with \char`\"{}\+GET\char`\"{} so that it does not have to be specified to many of the requests verbose value is passed for use in vprint 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLogReqs_1_1LogReqs_a8dd1e99f3f1a9dde25047f254b97a11a}\label{classLogReqs_1_1LogReqs_a8dd1e99f3f1a9dde25047f254b97a11a}} 
+\index{LogReqs@{LogReqs}!convert\_json\_to\_yaml@{convert\_json\_to\_yaml}}
+\index{convert\_json\_to\_yaml@{convert\_json\_to\_yaml}!LogReqs@{LogReqs}}
+\doxysubsubsection{\texorpdfstring{convert\_json\_to\_yaml()}{convert\_json\_to\_yaml()}}
+{\footnotesize\ttfamily def convert\+\_\+json\+\_\+to\+\_\+yaml (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{json\+\_\+data,  }\item[{}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+currently unused, converts the json logs to yaml format 
+
+\mbox{\Hypertarget{classLogReqs_1_1LogReqs_a63908c0250b1b68fdcd604fa3259f0f5}\label{classLogReqs_1_1LogReqs_a63908c0250b1b68fdcd604fa3259f0f5}} 
+\index{LogReqs@{LogReqs}!get\_response@{get\_response}}
+\index{get\_response@{get\_response}!LogReqs@{LogReqs}}
+\doxysubsubsection{\texorpdfstring{get\_response()}{get\_response()}}
+{\footnotesize\ttfamily def get\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+return response body ~\newline
+ 
+
+\begin{DoxyReturn}{Returns}
+response.\+body as json on successful request, else response.\+text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLogReqs_1_1LogReqs_a64ed337d5019f3f3015da1c8b2a61cf6}\label{classLogReqs_1_1LogReqs_a64ed337d5019f3f3015da1c8b2a61cf6}} 
+\index{LogReqs@{LogReqs}!hash\_of\_response@{hash\_of\_response}}
+\index{hash\_of\_response@{hash\_of\_response}!LogReqs@{LogReqs}}
+\doxysubsubsection{\texorpdfstring{hash\_of\_response()}{hash\_of\_response()}}
+{\footnotesize\ttfamily def hash\+\_\+of\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{response\+\_\+str }\end{DoxyParamCaption})}
+
+
+
+calculate and return the sha256 hash of the given response 
+
+
+\begin{DoxyParams}{Parameters}
+{\em response\+\_\+str} & the response returned by an API as string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sha256 hash as hexadecimal string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLogReqs_1_1LogReqs_ad8f76a6128cd637ff5427bb7a095a19d}\label{classLogReqs_1_1LogReqs_ad8f76a6128cd637ff5427bb7a095a19d}} 
+\index{LogReqs@{LogReqs}!log\_req\_res@{log\_req\_res}}
+\index{log\_req\_res@{log\_req\_res}!LogReqs@{LogReqs}}
+\doxysubsubsection{\texorpdfstring{log\_req\_res()}{log\_req\_res()}}
+{\footnotesize\ttfamily def log\+\_\+req\+\_\+res (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+should be called after each request that needs to be logged, collects all neccessary data and logs it to a csv-\/file resulting file names look like this\+: YYYY-\/\+MM-\/\+DD\+\_\+\+HH-\/\+MM-\/\+SS\+\_\+manufacturer\+\_\+api\+\_\+call\+\_\+\{response$\vert$info\}.json. 
+
+example\+: 2023-\/04-\/28\+\_\+18-\/14-\/49\+\_\+bmw\+\_\+get\+\_\+charging\+\_\+statistics\+\_\+response.\+json relevant attributes such as url, header, body and response have to be set by the caller beforehand method parameter is set to \textquotesingle{}GET\textquotesingle{} in constructor by default and only needs to be explicitly specified if a different HTTP method is intended to be used \mbox{\Hypertarget{classLogReqs_1_1LogReqs_a1d2362b50b577f5e3c9eca9b44cb48be}\label{classLogReqs_1_1LogReqs_a1d2362b50b577f5e3c9eca9b44cb48be}} 
+\index{LogReqs@{LogReqs}!print\_response@{print\_response}}
+\index{print\_response@{print\_response}!LogReqs@{LogReqs}}
+\doxysubsubsection{\texorpdfstring{print\_response()}{print\_response()}}
+{\footnotesize\ttfamily def print\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+print responses returned by APIs and print error message if requests was unsuccessful output also depends on value of \char`\"{}self.\+verbose\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+the response as json on success, empty string on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLogReqs_1_1LogReqs_ae644a6914653084fa3ec00cd9327caf6}\label{classLogReqs_1_1LogReqs_ae644a6914653084fa3ec00cd9327caf6}} 
+\index{LogReqs@{LogReqs}!vprint@{vprint}}
+\index{vprint@{vprint}!LogReqs@{LogReqs}}
+\doxysubsubsection{\texorpdfstring{vprint()}{vprint()}}
+{\footnotesize\ttfamily def vprint (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+prints args if self.\+verbose is true 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$args} & variable length list of args to be printed \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classLogReqs_1_1LogReqs_a14d48c2e9f05d0b03044eb45f308fcb0}\label{classLogReqs_1_1LogReqs_a14d48c2e9f05d0b03044eb45f308fcb0}} 
+\index{LogReqs@{LogReqs}!body@{body}}
+\index{body@{body}!LogReqs@{LogReqs}}
+\doxysubsubsection{\texorpdfstring{body}{body}}
+{\footnotesize\ttfamily body}
+
+\mbox{\Hypertarget{classLogReqs_1_1LogReqs_ae8f626807b2dddc1872b3005556939cd}\label{classLogReqs_1_1LogReqs_ae8f626807b2dddc1872b3005556939cd}} 
+\index{LogReqs@{LogReqs}!header@{header}}
+\index{header@{header}!LogReqs@{LogReqs}}
+\doxysubsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily header}
+
+\mbox{\Hypertarget{classLogReqs_1_1LogReqs_abed946c62f140eb7ff2ac742e6ad9497}\label{classLogReqs_1_1LogReqs_abed946c62f140eb7ff2ac742e6ad9497}} 
+\index{LogReqs@{LogReqs}!method@{method}}
+\index{method@{method}!LogReqs@{LogReqs}}
+\doxysubsubsection{\texorpdfstring{method}{method}}
+{\footnotesize\ttfamily method}
+
+\mbox{\Hypertarget{classLogReqs_1_1LogReqs_a4bc8f886a9f1544e31feccab665cf8d8}\label{classLogReqs_1_1LogReqs_a4bc8f886a9f1544e31feccab665cf8d8}} 
+\index{LogReqs@{LogReqs}!mf\_name@{mf\_name}}
+\index{mf\_name@{mf\_name}!LogReqs@{LogReqs}}
+\doxysubsubsection{\texorpdfstring{mf\_name}{mf\_name}}
+{\footnotesize\ttfamily mf\+\_\+name}
+
+\mbox{\Hypertarget{classLogReqs_1_1LogReqs_a8ab7bcb35ce5bba05608c72da6b4a0d3}\label{classLogReqs_1_1LogReqs_a8ab7bcb35ce5bba05608c72da6b4a0d3}} 
+\index{LogReqs@{LogReqs}!response@{response}}
+\index{response@{response}!LogReqs@{LogReqs}}
+\doxysubsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily response}
+
+\mbox{\Hypertarget{classLogReqs_1_1LogReqs_afcd5a3e84f2adb7f83fa6c99911f31e4}\label{classLogReqs_1_1LogReqs_afcd5a3e84f2adb7f83fa6c99911f31e4}} 
+\index{LogReqs@{LogReqs}!url@{url}}
+\index{url@{url}!LogReqs@{LogReqs}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily url}
+
+\mbox{\Hypertarget{classLogReqs_1_1LogReqs_aa9e289eddb591991c9bc7321dc5b186b}\label{classLogReqs_1_1LogReqs_aa9e289eddb591991c9bc7321dc5b186b}} 
+\index{LogReqs@{LogReqs}!verbose@{verbose}}
+\index{verbose@{verbose}!LogReqs@{LogReqs}}
+\doxysubsubsection{\texorpdfstring{verbose}{verbose}}
+{\footnotesize\ttfamily verbose}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ \+ /grand-\/theft-\/app-\/2.\+0/gta2\+Tool/src/\mbox{\hyperlink{LogReqs_8py}{Log\+Reqs.\+py}}\end{DoxyCompactItemize}

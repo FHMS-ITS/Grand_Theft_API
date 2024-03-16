@@ -1,0 +1,247 @@
+\hypertarget{classHyundai_1_1Hyundai}{}\doxysection{Hyundai Class Reference}
+\label{classHyundai_1_1Hyundai}\index{Hyundai@{Hyundai}}
+
+
+\mbox{\hyperlink{classHyundai_1_1Hyundai}{Hyundai}} Class implements all \mbox{\hyperlink{classHyundai_1_1Hyundai}{Hyundai}} API calls extends \mbox{\hyperlink{namespaceVehicle}{Vehicle}} Class.  
+
+
+
+
+Inheritance diagram for Hyundai\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=137pt]{classHyundai_1_1Hyundai__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Hyundai\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=137pt]{classHyundai_1_1Hyundai__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classHyundai_1_1Hyundai_aacd6f48c7da102742977a2d655247c0a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classVehicle_1_1Vehicle_aa9e289eddb591991c9bc7321dc5b186b}{verbose}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classHyundai_1_1Hyundai}{Hyundai}} Constructur Read the Hyundai-\/csv-\/file content such as access token, refresh token and metadata than assign their values to the member variabls of \mbox{\hyperlink{namespaceAudi}{Audi}} class. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classHyundai_1_1Hyundai_a99852478834df089b9df889b416e3c10}{cred\+\_\+auth}} (self, username, password)
+\begin{DoxyCompactList}\small\item\em Function for generating access token, refresh token from credentials set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response and call setattr\+\_\+from\+\_\+res(self.\+logger.\+response,$\ast$self.argv) $\ast$self.argv is set in constructor setattr\+\_\+from\+\_\+res sets the member variables of the class by reading new values from the response setattr\+\_\+from\+\_\+res also updates the csv file by calling update\+\_\+csv internally. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classHyundai_1_1Hyundai_aa9656f8514b291f5272b44fdeed98989}{get\+\_\+headers}} (self, header)
+\begin{DoxyCompactList}\small\item\em returns the requested HTTP Headers Dictionary of bmw requests example get\+\_\+headers(\char`\"{}\+TOKEN\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+REQ\+\_\+\+HEADERS\char`\"{}) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classHyundai_1_1Hyundai_adbdc07036c92c264870adb5d80da975c}{get\+\_\+user\+\_\+profile}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get user profile( data gives basic information about the user profile. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classHyundai_1_1Hyundai_addb54d6209f81380334d9ffd99cb4e0c}{get\+\_\+vehicles}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get the vehicle(s) linked to the user\textquotesingle{}s account gives basic information about the vehicle(s) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classHyundai_1_1Hyundai_a1148ea306cd8c4db897976d7c04a4cbc}{refresh\+\_\+tokens}} (self)
+\begin{DoxyCompactList}\small\item\em Function for generating access token using refresh token set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response and call setattr\+\_\+from\+\_\+res(self.\+logger.\+response,$\ast$self.argv) $\ast$self.argv is set in constructor setattr\+\_\+from\+\_\+res sets the member variables of the class by reading new values from the response setattr\+\_\+from\+\_\+res also updates the csv file by calling update\+\_\+csv internally. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classHyundai_1_1Hyundai_a0fef7505065af718e8b7d89d9db2c3c9}{set\+\_\+access\+\_\+token}} (self, \mbox{\hyperlink{classHyundai_1_1Hyundai_a38290dc65090f0a09641e10c0b5252e9}{access\+\_\+token}})
+\begin{DoxyCompactList}\small\item\em set the member variable access\+\_\+token and then calls the function update\+\_\+csv to update the csv-\/file \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classHyundai_1_1Hyundai_acc0cbc01b1631d92dd2409d766703c8d}{set\+\_\+refresh\+\_\+token}} (self, \mbox{\hyperlink{classHyundai_1_1Hyundai_a125e10f98fd036b472cfed465af01ae0}{refresh\+\_\+token}})
+\begin{DoxyCompactList}\small\item\em set the member variable refresh\+\_\+token then calls the function refresh\+\_\+tokens to acquire new tokens \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHyundai_1_1Hyundai_a38290dc65090f0a09641e10c0b5252e9}{access\+\_\+token}}
+\item 
+\mbox{\hyperlink{classHyundai_1_1Hyundai_a1fa302baef54f3e7f08e6831fcf3e191}{argv}}
+\item 
+\mbox{\hyperlink{classHyundai_1_1Hyundai_aadaea468666bd9459fb8cb41f5925fdf}{authorization}}
+\begin{DoxyCompactList}\small\item\em authorization seems to be constant, and was extracted using mitmproxy \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHyundai_1_1Hyundai_aa752c2b9fc0dc28f6f1ade018144d735}{expires\+\_\+in}}
+\item 
+\mbox{\hyperlink{classHyundai_1_1Hyundai_a4bc8f886a9f1544e31feccab665cf8d8}{mf\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em Manufacture name as String in lowercase \char`\"{}hyundai\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHyundai_1_1Hyundai_a125e10f98fd036b472cfed465af01ae0}{refresh\+\_\+token}}
+\item 
+\mbox{\hyperlink{classHyundai_1_1Hyundai_afe5ef662303b6b710ea6ee1a944bad0d}{token\+\_\+type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classHyundai_1_1Hyundai}{Hyundai}} Class implements all \mbox{\hyperlink{classHyundai_1_1Hyundai}{Hyundai}} API calls extends \mbox{\hyperlink{namespaceVehicle}{Vehicle}} Class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHyundai_1_1Hyundai_aacd6f48c7da102742977a2d655247c0a}\label{classHyundai_1_1Hyundai_aacd6f48c7da102742977a2d655247c0a}} 
+\index{Hyundai@{Hyundai}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Hyundai@{Hyundai}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{verbose }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classHyundai_1_1Hyundai}{Hyundai}} Constructur Read the Hyundai-\/csv-\/file content such as access token, refresh token and metadata than assign their values to the member variabls of \mbox{\hyperlink{namespaceAudi}{Audi}} class. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_aeaa816301f26b03d6adef2a399ebb9d7}{Vehicle}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHyundai_1_1Hyundai_a99852478834df089b9df889b416e3c10}\label{classHyundai_1_1Hyundai_a99852478834df089b9df889b416e3c10}} 
+\index{Hyundai@{Hyundai}!cred\_auth@{cred\_auth}}
+\index{cred\_auth@{cred\_auth}!Hyundai@{Hyundai}}
+\doxysubsubsection{\texorpdfstring{cred\_auth()}{cred\_auth()}}
+{\footnotesize\ttfamily def cred\+\_\+auth (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{username,  }\item[{}]{password }\end{DoxyParamCaption})}
+
+
+
+Function for generating access token, refresh token from credentials set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response and call setattr\+\_\+from\+\_\+res(self.\+logger.\+response,$\ast$self.argv) $\ast$self.argv is set in constructor setattr\+\_\+from\+\_\+res sets the member variables of the class by reading new values from the response setattr\+\_\+from\+\_\+res also updates the csv file by calling update\+\_\+csv internally. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & email \\
+\hline
+{\em password} & password \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_a99852478834df089b9df889b416e3c10}{Vehicle}}.
+
+\mbox{\Hypertarget{classHyundai_1_1Hyundai_aa9656f8514b291f5272b44fdeed98989}\label{classHyundai_1_1Hyundai_aa9656f8514b291f5272b44fdeed98989}} 
+\index{Hyundai@{Hyundai}!get\_headers@{get\_headers}}
+\index{get\_headers@{get\_headers}!Hyundai@{Hyundai}}
+\doxysubsubsection{\texorpdfstring{get\_headers()}{get\_headers()}}
+{\footnotesize\ttfamily def get\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{header }\end{DoxyParamCaption})}
+
+
+
+returns the requested HTTP Headers Dictionary of bmw requests example get\+\_\+headers(\char`\"{}\+TOKEN\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+REQ\+\_\+\+HEADERS\char`\"{}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & of Dictionary to be returned TOKEN\+\_\+\+HEADERS, REQ\+\_\+\+HEADERS \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dictionary of HTTP Headers to send with the request 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHyundai_1_1Hyundai_adbdc07036c92c264870adb5d80da975c}\label{classHyundai_1_1Hyundai_adbdc07036c92c264870adb5d80da975c}} 
+\index{Hyundai@{Hyundai}!get\_user\_profile@{get\_user\_profile}}
+\index{get\_user\_profile@{get\_user\_profile}!Hyundai@{Hyundai}}
+\doxysubsubsection{\texorpdfstring{get\_user\_profile()}{get\_user\_profile()}}
+{\footnotesize\ttfamily def get\+\_\+user\+\_\+profile (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get user profile( data gives basic information about the user profile. 
+
+\mbox{\Hypertarget{classHyundai_1_1Hyundai_addb54d6209f81380334d9ffd99cb4e0c}\label{classHyundai_1_1Hyundai_addb54d6209f81380334d9ffd99cb4e0c}} 
+\index{Hyundai@{Hyundai}!get\_vehicles@{get\_vehicles}}
+\index{get\_vehicles@{get\_vehicles}!Hyundai@{Hyundai}}
+\doxysubsubsection{\texorpdfstring{get\_vehicles()}{get\_vehicles()}}
+{\footnotesize\ttfamily def get\+\_\+vehicles (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get the vehicle(s) linked to the user\textquotesingle{}s account gives basic information about the vehicle(s) 
+
+\mbox{\Hypertarget{classHyundai_1_1Hyundai_a1148ea306cd8c4db897976d7c04a4cbc}\label{classHyundai_1_1Hyundai_a1148ea306cd8c4db897976d7c04a4cbc}} 
+\index{Hyundai@{Hyundai}!refresh\_tokens@{refresh\_tokens}}
+\index{refresh\_tokens@{refresh\_tokens}!Hyundai@{Hyundai}}
+\doxysubsubsection{\texorpdfstring{refresh\_tokens()}{refresh\_tokens()}}
+{\footnotesize\ttfamily def refresh\+\_\+tokens (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Function for generating access token using refresh token set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response and call setattr\+\_\+from\+\_\+res(self.\+logger.\+response,$\ast$self.argv) $\ast$self.argv is set in constructor setattr\+\_\+from\+\_\+res sets the member variables of the class by reading new values from the response setattr\+\_\+from\+\_\+res also updates the csv file by calling update\+\_\+csv internally. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_a1148ea306cd8c4db897976d7c04a4cbc}{Vehicle}}.
+
+\mbox{\Hypertarget{classHyundai_1_1Hyundai_a0fef7505065af718e8b7d89d9db2c3c9}\label{classHyundai_1_1Hyundai_a0fef7505065af718e8b7d89d9db2c3c9}} 
+\index{Hyundai@{Hyundai}!set\_access\_token@{set\_access\_token}}
+\index{set\_access\_token@{set\_access\_token}!Hyundai@{Hyundai}}
+\doxysubsubsection{\texorpdfstring{set\_access\_token()}{set\_access\_token()}}
+{\footnotesize\ttfamily def set\+\_\+access\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{access\+\_\+token }\end{DoxyParamCaption})}
+
+
+
+set the member variable access\+\_\+token and then calls the function update\+\_\+csv to update the csv-\/file 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_a0fef7505065af718e8b7d89d9db2c3c9}{Vehicle}}.
+
+\mbox{\Hypertarget{classHyundai_1_1Hyundai_acc0cbc01b1631d92dd2409d766703c8d}\label{classHyundai_1_1Hyundai_acc0cbc01b1631d92dd2409d766703c8d}} 
+\index{Hyundai@{Hyundai}!set\_refresh\_token@{set\_refresh\_token}}
+\index{set\_refresh\_token@{set\_refresh\_token}!Hyundai@{Hyundai}}
+\doxysubsubsection{\texorpdfstring{set\_refresh\_token()}{set\_refresh\_token()}}
+{\footnotesize\ttfamily def set\+\_\+refresh\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{refresh\+\_\+token }\end{DoxyParamCaption})}
+
+
+
+set the member variable refresh\+\_\+token then calls the function refresh\+\_\+tokens to acquire new tokens 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_acc0cbc01b1631d92dd2409d766703c8d}{Vehicle}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHyundai_1_1Hyundai_a38290dc65090f0a09641e10c0b5252e9}\label{classHyundai_1_1Hyundai_a38290dc65090f0a09641e10c0b5252e9}} 
+\index{Hyundai@{Hyundai}!access\_token@{access\_token}}
+\index{access\_token@{access\_token}!Hyundai@{Hyundai}}
+\doxysubsubsection{\texorpdfstring{access\_token}{access\_token}}
+{\footnotesize\ttfamily access\+\_\+token}
+
+\mbox{\Hypertarget{classHyundai_1_1Hyundai_a1fa302baef54f3e7f08e6831fcf3e191}\label{classHyundai_1_1Hyundai_a1fa302baef54f3e7f08e6831fcf3e191}} 
+\index{Hyundai@{Hyundai}!argv@{argv}}
+\index{argv@{argv}!Hyundai@{Hyundai}}
+\doxysubsubsection{\texorpdfstring{argv}{argv}}
+{\footnotesize\ttfamily argv}
+
+\mbox{\Hypertarget{classHyundai_1_1Hyundai_aadaea468666bd9459fb8cb41f5925fdf}\label{classHyundai_1_1Hyundai_aadaea468666bd9459fb8cb41f5925fdf}} 
+\index{Hyundai@{Hyundai}!authorization@{authorization}}
+\index{authorization@{authorization}!Hyundai@{Hyundai}}
+\doxysubsubsection{\texorpdfstring{authorization}{authorization}}
+{\footnotesize\ttfamily authorization}
+
+
+
+authorization seems to be constant, and was extracted using mitmproxy 
+
+\mbox{\Hypertarget{classHyundai_1_1Hyundai_aa752c2b9fc0dc28f6f1ade018144d735}\label{classHyundai_1_1Hyundai_aa752c2b9fc0dc28f6f1ade018144d735}} 
+\index{Hyundai@{Hyundai}!expires\_in@{expires\_in}}
+\index{expires\_in@{expires\_in}!Hyundai@{Hyundai}}
+\doxysubsubsection{\texorpdfstring{expires\_in}{expires\_in}}
+{\footnotesize\ttfamily expires\+\_\+in}
+
+\mbox{\Hypertarget{classHyundai_1_1Hyundai_a4bc8f886a9f1544e31feccab665cf8d8}\label{classHyundai_1_1Hyundai_a4bc8f886a9f1544e31feccab665cf8d8}} 
+\index{Hyundai@{Hyundai}!mf\_name@{mf\_name}}
+\index{mf\_name@{mf\_name}!Hyundai@{Hyundai}}
+\doxysubsubsection{\texorpdfstring{mf\_name}{mf\_name}}
+{\footnotesize\ttfamily mf\+\_\+name}
+
+
+
+Manufacture name as String in lowercase \char`\"{}hyundai\char`\"{}. 
+
+\mbox{\Hypertarget{classHyundai_1_1Hyundai_a125e10f98fd036b472cfed465af01ae0}\label{classHyundai_1_1Hyundai_a125e10f98fd036b472cfed465af01ae0}} 
+\index{Hyundai@{Hyundai}!refresh\_token@{refresh\_token}}
+\index{refresh\_token@{refresh\_token}!Hyundai@{Hyundai}}
+\doxysubsubsection{\texorpdfstring{refresh\_token}{refresh\_token}}
+{\footnotesize\ttfamily refresh\+\_\+token}
+
+\mbox{\Hypertarget{classHyundai_1_1Hyundai_afe5ef662303b6b710ea6ee1a944bad0d}\label{classHyundai_1_1Hyundai_afe5ef662303b6b710ea6ee1a944bad0d}} 
+\index{Hyundai@{Hyundai}!token\_type@{token\_type}}
+\index{token\_type@{token\_type}!Hyundai@{Hyundai}}
+\doxysubsubsection{\texorpdfstring{token\_type}{token\_type}}
+{\footnotesize\ttfamily token\+\_\+type}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ \+ /grand-\/theft-\/app-\/2.\+0/gta2\+Tool/src/\mbox{\hyperlink{Hyundai_8py}{Hyundai.\+py}}\end{DoxyCompactItemize}

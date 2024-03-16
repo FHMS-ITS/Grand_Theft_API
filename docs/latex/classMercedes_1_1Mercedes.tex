@@ -1,0 +1,270 @@
+\hypertarget{classMercedes_1_1Mercedes}{}\doxysection{Mercedes Class Reference}
+\label{classMercedes_1_1Mercedes}\index{Mercedes@{Mercedes}}
+
+
+\mbox{\hyperlink{classMercedes_1_1Mercedes}{Mercedes}} Class implements \mbox{\hyperlink{classMercedes_1_1Mercedes}{Mercedes}} API calls extends \mbox{\hyperlink{namespaceVehicle}{Vehicle}} Class.  
+
+
+
+
+Inheritance diagram for Mercedes\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{classMercedes_1_1Mercedes__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mercedes\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{classMercedes_1_1Mercedes__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classMercedes_1_1Mercedes_aacd6f48c7da102742977a2d655247c0a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classVehicle_1_1Vehicle_aa9e289eddb591991c9bc7321dc5b186b}{verbose}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classMercedes_1_1Mercedes}{Mercedes}} Constructur Read the Mercedes-\/csv-\/file content such as access token, refresh token and metadata than assign their values to the member variabls of \mbox{\hyperlink{classMercedes_1_1Mercedes}{Mercedes}} class. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classMercedes_1_1Mercedes_a325a324d5b468972e3aca4c8cee445bd}{cred\+\_\+auth}} (self, username, pin)
+\begin{DoxyCompactList}\small\item\em Function to initiate login using credentials (which includes PIN for \mbox{\hyperlink{classMercedes_1_1Mercedes}{Mercedes}}) is called after get\+\_\+pin in \mbox{\hyperlink{namespaceReqCreator}{Req\+Creator}}, because PIN has to received first. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classMercedes_1_1Mercedes_a4443b6cd851a33db72873c6e4b4d8e75}{get\+\_\+capabilities}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get a vehicle\textquotesingle{}s capabilities. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classMercedes_1_1Mercedes_ac7c6fc0c8c345d621417730f3301fe49}{get\+\_\+consumption}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get a vehicle\textquotesingle{}s consumption. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classMercedes_1_1Mercedes_aa9656f8514b291f5272b44fdeed98989}{get\+\_\+headers}} (self, header)
+\begin{DoxyCompactList}\small\item\em returns the requested HTTP Headers Dictionary of bmw requests example get\+\_\+headers(\char`\"{}\+TOKEN\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+AUTH\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+REQ\+\_\+\+HEADERS\char`\"{}) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classMercedes_1_1Mercedes_a4dcd955985ff11c1422220bb61eca0aa}{get\+\_\+pin}} (self, username)
+\begin{DoxyCompactList}\small\item\em Function to get the \mbox{\hyperlink{classMercedes_1_1Mercedes}{Mercedes}} PIN (one time password) user has to enter email / phone number first and then type in the PIN is called before cred\+\_\+auth in \mbox{\hyperlink{namespaceReqCreator}{Req\+Creator}}. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classMercedes_1_1Mercedes_abde70a7e5f61788c7c1c67d96abd49a8}{get\+\_\+vehicles\+\_\+app}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get the vehicle(s) linked to the user\textquotesingle{}s account gives basic information about the vehicle(s), source is reversing of Mercedes\+Me Android App. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classMercedes_1_1Mercedes_a6712ca1bc317182df399b15a6273391c}{get\+\_\+vehicles\+\_\+iobroker}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get the vehicle(s) linked to the user\textquotesingle{}s account gives basic information about the vehicle(s), source is io\+Broker\+: \href{https://github.com/TA2k/ioBroker.mercedesme/blob/master/main.js}{\texttt{ https\+://github.\+com/\+TA2k/io\+Broker.\+mercedesme/blob/master/main.\+js}}. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classMercedes_1_1Mercedes_a1148ea306cd8c4db897976d7c04a4cbc}{refresh\+\_\+tokens}} (self)
+\begin{DoxyCompactList}\small\item\em Function for generating access token using refresh token set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response and call setattr\+\_\+from\+\_\+res(self.\+logger.\+response,$\ast$self.argv) $\ast$self.argv is set in constructor setattr\+\_\+from\+\_\+res sets the member variables of the class by reading new values from the response setattr\+\_\+from\+\_\+res also updates the csv file by calling update\+\_\+csv internally. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classMercedes_1_1Mercedes_a0fef7505065af718e8b7d89d9db2c3c9}{set\+\_\+access\+\_\+token}} (self, \mbox{\hyperlink{classMercedes_1_1Mercedes_a38290dc65090f0a09641e10c0b5252e9}{access\+\_\+token}})
+\begin{DoxyCompactList}\small\item\em set the member variable access\+\_\+token and then calls the function update\+\_\+csv to update he csv-\/file \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classMercedes_1_1Mercedes_acc0cbc01b1631d92dd2409d766703c8d}{set\+\_\+refresh\+\_\+token}} (self, \mbox{\hyperlink{classMercedes_1_1Mercedes_a125e10f98fd036b472cfed465af01ae0}{refresh\+\_\+token}})
+\begin{DoxyCompactList}\small\item\em set the member variable refresh\+\_\+token and then calls the function refresh\+\_\+tokens to acquire new tokens \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMercedes_1_1Mercedes_a38290dc65090f0a09641e10c0b5252e9}{access\+\_\+token}}
+\item 
+\mbox{\hyperlink{classMercedes_1_1Mercedes_a1fa302baef54f3e7f08e6831fcf3e191}{argv}}
+\item 
+\mbox{\hyperlink{classMercedes_1_1Mercedes_aa752c2b9fc0dc28f6f1ade018144d735}{expires\+\_\+in}}
+\item 
+\mbox{\hyperlink{classMercedes_1_1Mercedes_a4bc8f886a9f1544e31feccab665cf8d8}{mf\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em Manufacture name as String in lowercase \char`\"{}mercedes\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMercedes_1_1Mercedes_a125e10f98fd036b472cfed465af01ae0}{refresh\+\_\+token}}
+\item 
+\mbox{\hyperlink{classMercedes_1_1Mercedes_afe5ef662303b6b710ea6ee1a944bad0d}{token\+\_\+type}}
+\item 
+\mbox{\hyperlink{classMercedes_1_1Mercedes_a0637a204a383bee69b03919bce9e8c3d}{vin}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classMercedes_1_1Mercedes}{Mercedes}} Class implements \mbox{\hyperlink{classMercedes_1_1Mercedes}{Mercedes}} API calls extends \mbox{\hyperlink{namespaceVehicle}{Vehicle}} Class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_aacd6f48c7da102742977a2d655247c0a}\label{classMercedes_1_1Mercedes_aacd6f48c7da102742977a2d655247c0a}} 
+\index{Mercedes@{Mercedes}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{verbose }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classMercedes_1_1Mercedes}{Mercedes}} Constructur Read the Mercedes-\/csv-\/file content such as access token, refresh token and metadata than assign their values to the member variabls of \mbox{\hyperlink{classMercedes_1_1Mercedes}{Mercedes}} class. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_aeaa816301f26b03d6adef2a399ebb9d7}{Vehicle}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_a325a324d5b468972e3aca4c8cee445bd}\label{classMercedes_1_1Mercedes_a325a324d5b468972e3aca4c8cee445bd}} 
+\index{Mercedes@{Mercedes}!cred\_auth@{cred\_auth}}
+\index{cred\_auth@{cred\_auth}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{cred\_auth()}{cred\_auth()}}
+{\footnotesize\ttfamily def cred\+\_\+auth (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{username,  }\item[{}]{pin }\end{DoxyParamCaption})}
+
+
+
+Function to initiate login using credentials (which includes PIN for \mbox{\hyperlink{classMercedes_1_1Mercedes}{Mercedes}}) is called after get\+\_\+pin in \mbox{\hyperlink{namespaceReqCreator}{Req\+Creator}}, because PIN has to received first. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_a99852478834df089b9df889b416e3c10}{Vehicle}}.
+
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_a4443b6cd851a33db72873c6e4b4d8e75}\label{classMercedes_1_1Mercedes_a4443b6cd851a33db72873c6e4b4d8e75}} 
+\index{Mercedes@{Mercedes}!get\_capabilities@{get\_capabilities}}
+\index{get\_capabilities@{get\_capabilities}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{get\_capabilities()}{get\_capabilities()}}
+{\footnotesize\ttfamily def get\+\_\+capabilities (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get a vehicle\textquotesingle{}s capabilities. 
+
+example\+: consumption, or possibly lock status \mbox{\Hypertarget{classMercedes_1_1Mercedes_ac7c6fc0c8c345d621417730f3301fe49}\label{classMercedes_1_1Mercedes_ac7c6fc0c8c345d621417730f3301fe49}} 
+\index{Mercedes@{Mercedes}!get\_consumption@{get\_consumption}}
+\index{get\_consumption@{get\_consumption}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{get\_consumption()}{get\_consumption()}}
+{\footnotesize\ttfamily def get\+\_\+consumption (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get a vehicle\textquotesingle{}s consumption. 
+
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_aa9656f8514b291f5272b44fdeed98989}\label{classMercedes_1_1Mercedes_aa9656f8514b291f5272b44fdeed98989}} 
+\index{Mercedes@{Mercedes}!get\_headers@{get\_headers}}
+\index{get\_headers@{get\_headers}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{get\_headers()}{get\_headers()}}
+{\footnotesize\ttfamily def get\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{header }\end{DoxyParamCaption})}
+
+
+
+returns the requested HTTP Headers Dictionary of bmw requests example get\+\_\+headers(\char`\"{}\+TOKEN\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+AUTH\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+REQ\+\_\+\+HEADERS\char`\"{}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & of Dictionary to be returned TOKEN\+\_\+\+HEADERS, AUTH\+\_\+\+HEADERS, REQ\+\_\+\+HEADERS, TOKEN\+\_\+\+PIN\+\_\+\+HEADERS \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dictionary of HTTP Headers to send with the request 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_a4dcd955985ff11c1422220bb61eca0aa}\label{classMercedes_1_1Mercedes_a4dcd955985ff11c1422220bb61eca0aa}} 
+\index{Mercedes@{Mercedes}!get\_pin@{get\_pin}}
+\index{get\_pin@{get\_pin}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{get\_pin()}{get\_pin()}}
+{\footnotesize\ttfamily def get\+\_\+pin (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{username }\end{DoxyParamCaption})}
+
+
+
+Function to get the \mbox{\hyperlink{classMercedes_1_1Mercedes}{Mercedes}} PIN (one time password) user has to enter email / phone number first and then type in the PIN is called before cred\+\_\+auth in \mbox{\hyperlink{namespaceReqCreator}{Req\+Creator}}. 
+
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_abde70a7e5f61788c7c1c67d96abd49a8}\label{classMercedes_1_1Mercedes_abde70a7e5f61788c7c1c67d96abd49a8}} 
+\index{Mercedes@{Mercedes}!get\_vehicles\_app@{get\_vehicles\_app}}
+\index{get\_vehicles\_app@{get\_vehicles\_app}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{get\_vehicles\_app()}{get\_vehicles\_app()}}
+{\footnotesize\ttfamily def get\+\_\+vehicles\+\_\+app (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get the vehicle(s) linked to the user\textquotesingle{}s account gives basic information about the vehicle(s), source is reversing of Mercedes\+Me Android App. 
+
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_a6712ca1bc317182df399b15a6273391c}\label{classMercedes_1_1Mercedes_a6712ca1bc317182df399b15a6273391c}} 
+\index{Mercedes@{Mercedes}!get\_vehicles\_iobroker@{get\_vehicles\_iobroker}}
+\index{get\_vehicles\_iobroker@{get\_vehicles\_iobroker}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{get\_vehicles\_iobroker()}{get\_vehicles\_iobroker()}}
+{\footnotesize\ttfamily def get\+\_\+vehicles\+\_\+iobroker (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get the vehicle(s) linked to the user\textquotesingle{}s account gives basic information about the vehicle(s), source is io\+Broker\+: \href{https://github.com/TA2k/ioBroker.mercedesme/blob/master/main.js}{\texttt{ https\+://github.\+com/\+TA2k/io\+Broker.\+mercedesme/blob/master/main.\+js}}. 
+
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_a1148ea306cd8c4db897976d7c04a4cbc}\label{classMercedes_1_1Mercedes_a1148ea306cd8c4db897976d7c04a4cbc}} 
+\index{Mercedes@{Mercedes}!refresh\_tokens@{refresh\_tokens}}
+\index{refresh\_tokens@{refresh\_tokens}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{refresh\_tokens()}{refresh\_tokens()}}
+{\footnotesize\ttfamily def refresh\+\_\+tokens (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Function for generating access token using refresh token set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response and call setattr\+\_\+from\+\_\+res(self.\+logger.\+response,$\ast$self.argv) $\ast$self.argv is set in constructor setattr\+\_\+from\+\_\+res sets the member variables of the class by reading new values from the response setattr\+\_\+from\+\_\+res also updates the csv file by calling update\+\_\+csv internally. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_a1148ea306cd8c4db897976d7c04a4cbc}{Vehicle}}.
+
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_a0fef7505065af718e8b7d89d9db2c3c9}\label{classMercedes_1_1Mercedes_a0fef7505065af718e8b7d89d9db2c3c9}} 
+\index{Mercedes@{Mercedes}!set\_access\_token@{set\_access\_token}}
+\index{set\_access\_token@{set\_access\_token}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{set\_access\_token()}{set\_access\_token()}}
+{\footnotesize\ttfamily def set\+\_\+access\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{access\+\_\+token }\end{DoxyParamCaption})}
+
+
+
+set the member variable access\+\_\+token and then calls the function update\+\_\+csv to update he csv-\/file 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_a0fef7505065af718e8b7d89d9db2c3c9}{Vehicle}}.
+
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_acc0cbc01b1631d92dd2409d766703c8d}\label{classMercedes_1_1Mercedes_acc0cbc01b1631d92dd2409d766703c8d}} 
+\index{Mercedes@{Mercedes}!set\_refresh\_token@{set\_refresh\_token}}
+\index{set\_refresh\_token@{set\_refresh\_token}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{set\_refresh\_token()}{set\_refresh\_token()}}
+{\footnotesize\ttfamily def set\+\_\+refresh\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{refresh\+\_\+token }\end{DoxyParamCaption})}
+
+
+
+set the member variable refresh\+\_\+token and then calls the function refresh\+\_\+tokens to acquire new tokens 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_acc0cbc01b1631d92dd2409d766703c8d}{Vehicle}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_a38290dc65090f0a09641e10c0b5252e9}\label{classMercedes_1_1Mercedes_a38290dc65090f0a09641e10c0b5252e9}} 
+\index{Mercedes@{Mercedes}!access\_token@{access\_token}}
+\index{access\_token@{access\_token}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{access\_token}{access\_token}}
+{\footnotesize\ttfamily access\+\_\+token}
+
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_a1fa302baef54f3e7f08e6831fcf3e191}\label{classMercedes_1_1Mercedes_a1fa302baef54f3e7f08e6831fcf3e191}} 
+\index{Mercedes@{Mercedes}!argv@{argv}}
+\index{argv@{argv}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{argv}{argv}}
+{\footnotesize\ttfamily argv}
+
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_aa752c2b9fc0dc28f6f1ade018144d735}\label{classMercedes_1_1Mercedes_aa752c2b9fc0dc28f6f1ade018144d735}} 
+\index{Mercedes@{Mercedes}!expires\_in@{expires\_in}}
+\index{expires\_in@{expires\_in}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{expires\_in}{expires\_in}}
+{\footnotesize\ttfamily expires\+\_\+in}
+
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_a4bc8f886a9f1544e31feccab665cf8d8}\label{classMercedes_1_1Mercedes_a4bc8f886a9f1544e31feccab665cf8d8}} 
+\index{Mercedes@{Mercedes}!mf\_name@{mf\_name}}
+\index{mf\_name@{mf\_name}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{mf\_name}{mf\_name}}
+{\footnotesize\ttfamily mf\+\_\+name}
+
+
+
+Manufacture name as String in lowercase \char`\"{}mercedes\char`\"{}. 
+
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_a125e10f98fd036b472cfed465af01ae0}\label{classMercedes_1_1Mercedes_a125e10f98fd036b472cfed465af01ae0}} 
+\index{Mercedes@{Mercedes}!refresh\_token@{refresh\_token}}
+\index{refresh\_token@{refresh\_token}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{refresh\_token}{refresh\_token}}
+{\footnotesize\ttfamily refresh\+\_\+token}
+
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_afe5ef662303b6b710ea6ee1a944bad0d}\label{classMercedes_1_1Mercedes_afe5ef662303b6b710ea6ee1a944bad0d}} 
+\index{Mercedes@{Mercedes}!token\_type@{token\_type}}
+\index{token\_type@{token\_type}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{token\_type}{token\_type}}
+{\footnotesize\ttfamily token\+\_\+type}
+
+\mbox{\Hypertarget{classMercedes_1_1Mercedes_a0637a204a383bee69b03919bce9e8c3d}\label{classMercedes_1_1Mercedes_a0637a204a383bee69b03919bce9e8c3d}} 
+\index{Mercedes@{Mercedes}!vin@{vin}}
+\index{vin@{vin}!Mercedes@{Mercedes}}
+\doxysubsubsection{\texorpdfstring{vin}{vin}}
+{\footnotesize\ttfamily vin}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ \+ /grand-\/theft-\/app-\/2.\+0/gta2\+Tool/src/\mbox{\hyperlink{Mercedes_8py}{Mercedes.\+py}}\end{DoxyCompactItemize}

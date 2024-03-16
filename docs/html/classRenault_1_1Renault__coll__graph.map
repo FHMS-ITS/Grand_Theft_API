@@ -1,0 +1,4 @@
+<map id="Renault" name="Renault">
+<area shape="rect" id="node1" title="Renault Class implements available Renault api calls extends Vehicle Class." alt="" coords="5,80,77,107"/>
+<area shape="rect" id="node2" href="$classVehicle_1_1Vehicle.html" title="abstract class used as superclass for manufacturer classes includes a number of abstract methods (@ab..." alt="" coords="7,5,76,32"/>
+</map>

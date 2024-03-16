@@ -1,0 +1,408 @@
+\hypertarget{classRenault_1_1Renault}{}\doxysection{Renault Class Reference}
+\label{classRenault_1_1Renault}\index{Renault@{Renault}}
+
+
+\mbox{\hyperlink{classRenault_1_1Renault}{Renault}} Class implements available \mbox{\hyperlink{classRenault_1_1Renault}{Renault}} api calls extends \mbox{\hyperlink{namespaceVehicle}{Vehicle}} Class.  
+
+
+
+
+Inheritance diagram for Renault\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{classRenault_1_1Renault__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Renault\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{classRenault_1_1Renault__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_aacd6f48c7da102742977a2d655247c0a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classVehicle_1_1Vehicle_aa9e289eddb591991c9bc7321dc5b186b}{verbose}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classRenault_1_1Renault}{Renault}} Constructor Read the subclass-\/csv-\/file content such as access token, refresh token and metadata then assign their values to the member variables of \mbox{\hyperlink{classRenault_1_1Renault}{Renault}} class. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_a99852478834df089b9df889b416e3c10}{cred\+\_\+auth}} (self, username, password)
+\begin{DoxyCompactList}\small\item\em generate new access token, refresh token from credential and update the member variables and csv-\/file \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_a58f9e7c4af6320a84a98c500beb9d241}{get\+\_\+battery\+\_\+inhibition\+\_\+status}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get the vehicle\textquotesingle{}s battery inhibition status. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_a7aa7a7ae9661730071afef0321f92b37}{get\+\_\+battery\+\_\+status}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get the vehicle\textquotesingle{}s battery status. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_a3f487f94966f4d5dd9d54e75f9402467}{get\+\_\+charge\+\_\+history}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get the vehicle\textquotesingle{}s charge history. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_a189545ef188ebad295d0fcc1f4392a2e}{get\+\_\+charge\+\_\+mode}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get the vehicle\textquotesingle{}s charge mode. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_adaa21c6a701fb03c5944cbdcbbe14ddc}{get\+\_\+charges}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get the vehicle\textquotesingle{}s charges ~\newline
+ \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_a3d1316892752ff31d96893afa76200e8}{get\+\_\+charging\+\_\+settings}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get the vehicle\textquotesingle{}s charging settings. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_adef981e06365cd30e1dd86112332e59b}{get\+\_\+cockpit}} (self, version)
+\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_aa9656f8514b291f5272b44fdeed98989}{get\+\_\+headers}} (self, header)
+\begin{DoxyCompactList}\small\item\em returns the requested HTTP Headers Dictionary of renault requests example get\+\_\+headers(\char`\"{}\+TOKEN\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+AUTH\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+REQ\+\_\+\+HEADERS\char`\"{}) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_a6b7cbf6441ba1eb5dfc3c0d88c060e72}{get\+\_\+hvac\+\_\+settings}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get the vehicle\textquotesingle{}s hvac settings (heating, ventilation, air conditioning) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_a43bb5cf8f41942553873ffa09b1f988c}{get\+\_\+hvac\+\_\+status}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get the vehicle\textquotesingle{}s hvac status (heating, ventilation, air conditioning) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_a67f3d36e92cc3b0282424fb6ec9f945a}{get\+\_\+location}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get the vehicle\textquotesingle{}s position (lat/long) and heading (direction) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_a87f10fa06949f4ee6d883f42b51f3f0a}{get\+\_\+lock\+\_\+status}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get information on the vehicle\textquotesingle{}s lock state. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_a97b618680a02ec68fed190ecb4c41ebb}{get\+\_\+res\+\_\+state}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get information on the vehicle\textquotesingle{}s res state. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_a46e189dfe465a3463ea9a0fba87bf237}{get\+\_\+user\+\_\+data}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get general data on the user and the account. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_addb54d6209f81380334d9ffd99cb4e0c}{get\+\_\+vehicles}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get the vehicle(s) linked to the user\textquotesingle{}s account. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_a1148ea306cd8c4db897976d7c04a4cbc}{refresh\+\_\+tokens}} (self)
+\begin{DoxyCompactList}\small\item\em generate new access token and update the member variables and csv-\/file \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_a0fef7505065af718e8b7d89d9db2c3c9}{set\+\_\+access\+\_\+token}} (self, \mbox{\hyperlink{classVehicle_1_1Vehicle_a38290dc65090f0a09641e10c0b5252e9}{access\+\_\+token}})
+\begin{DoxyCompactList}\small\item\em sets a new id\+\_\+token and updates the according member variables \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classRenault_1_1Renault_acc0cbc01b1631d92dd2409d766703c8d}{set\+\_\+refresh\+\_\+token}} (self, \mbox{\hyperlink{classVehicle_1_1Vehicle_a125e10f98fd036b472cfed465af01ae0}{refresh\+\_\+token}})
+\begin{DoxyCompactList}\small\item\em sets a new login\+\_\+token and updates the according member variables \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRenault_1_1Renault_a19037fe1897f5e448005036281a2979b}{account\+Id}}
+\item 
+\mbox{\hyperlink{classRenault_1_1Renault_a615e49373619144151a614561d709b51}{apikey}}
+\begin{DoxyCompactList}\small\item\em apikey is subject to change, check here for latest \char`\"{}gigya\+\_\+apikey\char`\"{} (in our case DE)\+: \href{https://raw.githubusercontent.com/hacf-fr/renault-api/main/src/renault_api/const.py}{\texttt{ https\+://raw.\+githubusercontent.\+com/hacf-\/fr/renault-\/api/main/src/renault\+\_\+api/const.\+py}} updatekey is subject to change, check provided url for latest \char`\"{}\+Kamereon API\char`\"{} key. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRenault_1_1Renault_a1fa302baef54f3e7f08e6831fcf3e191}{argv}}
+\item 
+\mbox{\hyperlink{classRenault_1_1Renault_a811cdd6010e3993b30e7040faff3e882}{id\+\_\+token}}
+\item 
+\mbox{\hyperlink{classRenault_1_1Renault_a935a980a0df3d0472f7ace716fb5bed9}{login\+\_\+token}}
+\item 
+\mbox{\hyperlink{classRenault_1_1Renault_a4bc8f886a9f1544e31feccab665cf8d8}{mf\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em Manufacture name as String in lowercase \char`\"{}renault\char`\"{} or \char`\"{}dacia\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRenault_1_1Renault_a606f0cf29092ac74c929a7b17bcae905}{mf\+\_\+tf\+\_\+path}}
+\item 
+\mbox{\hyperlink{classRenault_1_1Renault_ab227f382fb8de84047b67dc7a3c4c3c6}{updatekey}}
+\item 
+\mbox{\hyperlink{classRenault_1_1Renault_a0637a204a383bee69b03919bce9e8c3d}{vin}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classRenault_1_1Renault}{Renault}} Class implements available \mbox{\hyperlink{classRenault_1_1Renault}{Renault}} api calls extends \mbox{\hyperlink{namespaceVehicle}{Vehicle}} Class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRenault_1_1Renault_aacd6f48c7da102742977a2d655247c0a}\label{classRenault_1_1Renault_aacd6f48c7da102742977a2d655247c0a}} 
+\index{Renault@{Renault}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{verbose }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classRenault_1_1Renault}{Renault}} Constructor Read the subclass-\/csv-\/file content such as access token, refresh token and metadata then assign their values to the member variables of \mbox{\hyperlink{classRenault_1_1Renault}{Renault}} class. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_aeaa816301f26b03d6adef2a399ebb9d7}{Vehicle}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classDacia_1_1Dacia_aacd6f48c7da102742977a2d655247c0a}{Dacia}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRenault_1_1Renault_a99852478834df089b9df889b416e3c10}\label{classRenault_1_1Renault_a99852478834df089b9df889b416e3c10}} 
+\index{Renault@{Renault}!cred\_auth@{cred\_auth}}
+\index{cred\_auth@{cred\_auth}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{cred\_auth()}{cred\_auth()}}
+{\footnotesize\ttfamily def cred\+\_\+auth (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{username,  }\item[{}]{password }\end{DoxyParamCaption})}
+
+
+
+generate new access token, refresh token from credential and update the member variables and csv-\/file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & email \\
+\hline
+{\em password} & password \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+$\sim$/docs/drafts/renault auth.\+png 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_a99852478834df089b9df889b416e3c10}{Vehicle}}.
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a58f9e7c4af6320a84a98c500beb9d241}\label{classRenault_1_1Renault_a58f9e7c4af6320a84a98c500beb9d241}} 
+\index{Renault@{Renault}!get\_battery\_inhibition\_status@{get\_battery\_inhibition\_status}}
+\index{get\_battery\_inhibition\_status@{get\_battery\_inhibition\_status}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{get\_battery\_inhibition\_status()}{get\_battery\_inhibition\_status()}}
+{\footnotesize\ttfamily def get\+\_\+battery\+\_\+inhibition\+\_\+status (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get the vehicle\textquotesingle{}s battery inhibition status. 
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a7aa7a7ae9661730071afef0321f92b37}\label{classRenault_1_1Renault_a7aa7a7ae9661730071afef0321f92b37}} 
+\index{Renault@{Renault}!get\_battery\_status@{get\_battery\_status}}
+\index{get\_battery\_status@{get\_battery\_status}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{get\_battery\_status()}{get\_battery\_status()}}
+{\footnotesize\ttfamily def get\+\_\+battery\+\_\+status (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get the vehicle\textquotesingle{}s battery status. 
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a3f487f94966f4d5dd9d54e75f9402467}\label{classRenault_1_1Renault_a3f487f94966f4d5dd9d54e75f9402467}} 
+\index{Renault@{Renault}!get\_charge\_history@{get\_charge\_history}}
+\index{get\_charge\_history@{get\_charge\_history}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{get\_charge\_history()}{get\_charge\_history()}}
+{\footnotesize\ttfamily def get\+\_\+charge\+\_\+history (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get the vehicle\textquotesingle{}s charge history. 
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a189545ef188ebad295d0fcc1f4392a2e}\label{classRenault_1_1Renault_a189545ef188ebad295d0fcc1f4392a2e}} 
+\index{Renault@{Renault}!get\_charge\_mode@{get\_charge\_mode}}
+\index{get\_charge\_mode@{get\_charge\_mode}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{get\_charge\_mode()}{get\_charge\_mode()}}
+{\footnotesize\ttfamily def get\+\_\+charge\+\_\+mode (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get the vehicle\textquotesingle{}s charge mode. 
+
+\mbox{\Hypertarget{classRenault_1_1Renault_adaa21c6a701fb03c5944cbdcbbe14ddc}\label{classRenault_1_1Renault_adaa21c6a701fb03c5944cbdcbbe14ddc}} 
+\index{Renault@{Renault}!get\_charges@{get\_charges}}
+\index{get\_charges@{get\_charges}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{get\_charges()}{get\_charges()}}
+{\footnotesize\ttfamily def get\+\_\+charges (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get the vehicle\textquotesingle{}s charges ~\newline
+ 
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a3d1316892752ff31d96893afa76200e8}\label{classRenault_1_1Renault_a3d1316892752ff31d96893afa76200e8}} 
+\index{Renault@{Renault}!get\_charging\_settings@{get\_charging\_settings}}
+\index{get\_charging\_settings@{get\_charging\_settings}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{get\_charging\_settings()}{get\_charging\_settings()}}
+{\footnotesize\ttfamily def get\+\_\+charging\+\_\+settings (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get the vehicle\textquotesingle{}s charging settings. 
+
+\mbox{\Hypertarget{classRenault_1_1Renault_adef981e06365cd30e1dd86112332e59b}\label{classRenault_1_1Renault_adef981e06365cd30e1dd86112332e59b}} 
+\index{Renault@{Renault}!get\_cockpit@{get\_cockpit}}
+\index{get\_cockpit@{get\_cockpit}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{get\_cockpit()}{get\_cockpit()}}
+{\footnotesize\ttfamily def get\+\_\+cockpit (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{version }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRenault_1_1Renault_aa9656f8514b291f5272b44fdeed98989}\label{classRenault_1_1Renault_aa9656f8514b291f5272b44fdeed98989}} 
+\index{Renault@{Renault}!get\_headers@{get\_headers}}
+\index{get\_headers@{get\_headers}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{get\_headers()}{get\_headers()}}
+{\footnotesize\ttfamily def get\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{header }\end{DoxyParamCaption})}
+
+
+
+returns the requested HTTP Headers Dictionary of renault requests example get\+\_\+headers(\char`\"{}\+TOKEN\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+AUTH\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+REQ\+\_\+\+HEADERS\char`\"{}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em header} & Name of Dictionary to be returned TOKEN\+\_\+\+HEADERS, AUTH\+\_\+\+HEADERS, REQ\+\_\+\+HEADERS \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dictionary of HTTP Headers to send with the request 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRenault_1_1Renault_a6b7cbf6441ba1eb5dfc3c0d88c060e72}\label{classRenault_1_1Renault_a6b7cbf6441ba1eb5dfc3c0d88c060e72}} 
+\index{Renault@{Renault}!get\_hvac\_settings@{get\_hvac\_settings}}
+\index{get\_hvac\_settings@{get\_hvac\_settings}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{get\_hvac\_settings()}{get\_hvac\_settings()}}
+{\footnotesize\ttfamily def get\+\_\+hvac\+\_\+settings (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get the vehicle\textquotesingle{}s hvac settings (heating, ventilation, air conditioning) 
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a43bb5cf8f41942553873ffa09b1f988c}\label{classRenault_1_1Renault_a43bb5cf8f41942553873ffa09b1f988c}} 
+\index{Renault@{Renault}!get\_hvac\_status@{get\_hvac\_status}}
+\index{get\_hvac\_status@{get\_hvac\_status}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{get\_hvac\_status()}{get\_hvac\_status()}}
+{\footnotesize\ttfamily def get\+\_\+hvac\+\_\+status (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get the vehicle\textquotesingle{}s hvac status (heating, ventilation, air conditioning) 
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a67f3d36e92cc3b0282424fb6ec9f945a}\label{classRenault_1_1Renault_a67f3d36e92cc3b0282424fb6ec9f945a}} 
+\index{Renault@{Renault}!get\_location@{get\_location}}
+\index{get\_location@{get\_location}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{get\_location()}{get\_location()}}
+{\footnotesize\ttfamily def get\+\_\+location (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get the vehicle\textquotesingle{}s position (lat/long) and heading (direction) 
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a87f10fa06949f4ee6d883f42b51f3f0a}\label{classRenault_1_1Renault_a87f10fa06949f4ee6d883f42b51f3f0a}} 
+\index{Renault@{Renault}!get\_lock\_status@{get\_lock\_status}}
+\index{get\_lock\_status@{get\_lock\_status}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{get\_lock\_status()}{get\_lock\_status()}}
+{\footnotesize\ttfamily def get\+\_\+lock\+\_\+status (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get information on the vehicle\textquotesingle{}s lock state. 
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a97b618680a02ec68fed190ecb4c41ebb}\label{classRenault_1_1Renault_a97b618680a02ec68fed190ecb4c41ebb}} 
+\index{Renault@{Renault}!get\_res\_state@{get\_res\_state}}
+\index{get\_res\_state@{get\_res\_state}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{get\_res\_state()}{get\_res\_state()}}
+{\footnotesize\ttfamily def get\+\_\+res\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get information on the vehicle\textquotesingle{}s res state. 
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a46e189dfe465a3463ea9a0fba87bf237}\label{classRenault_1_1Renault_a46e189dfe465a3463ea9a0fba87bf237}} 
+\index{Renault@{Renault}!get\_user\_data@{get\_user\_data}}
+\index{get\_user\_data@{get\_user\_data}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{get\_user\_data()}{get\_user\_data()}}
+{\footnotesize\ttfamily def get\+\_\+user\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get general data on the user and the account. 
+
+\mbox{\Hypertarget{classRenault_1_1Renault_addb54d6209f81380334d9ffd99cb4e0c}\label{classRenault_1_1Renault_addb54d6209f81380334d9ffd99cb4e0c}} 
+\index{Renault@{Renault}!get\_vehicles@{get\_vehicles}}
+\index{get\_vehicles@{get\_vehicles}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{get\_vehicles()}{get\_vehicles()}}
+{\footnotesize\ttfamily def get\+\_\+vehicles (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get the vehicle(s) linked to the user\textquotesingle{}s account. 
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a1148ea306cd8c4db897976d7c04a4cbc}\label{classRenault_1_1Renault_a1148ea306cd8c4db897976d7c04a4cbc}} 
+\index{Renault@{Renault}!refresh\_tokens@{refresh\_tokens}}
+\index{refresh\_tokens@{refresh\_tokens}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{refresh\_tokens()}{refresh\_tokens()}}
+{\footnotesize\ttfamily def refresh\+\_\+tokens (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+generate new access token and update the member variables and csv-\/file 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_a1148ea306cd8c4db897976d7c04a4cbc}{Vehicle}}.
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a0fef7505065af718e8b7d89d9db2c3c9}\label{classRenault_1_1Renault_a0fef7505065af718e8b7d89d9db2c3c9}} 
+\index{Renault@{Renault}!set\_access\_token@{set\_access\_token}}
+\index{set\_access\_token@{set\_access\_token}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{set\_access\_token()}{set\_access\_token()}}
+{\footnotesize\ttfamily def set\+\_\+access\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{access\+\_\+token }\end{DoxyParamCaption})}
+
+
+
+sets a new id\+\_\+token and updates the according member variables 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_a0fef7505065af718e8b7d89d9db2c3c9}{Vehicle}}.
+
+\mbox{\Hypertarget{classRenault_1_1Renault_acc0cbc01b1631d92dd2409d766703c8d}\label{classRenault_1_1Renault_acc0cbc01b1631d92dd2409d766703c8d}} 
+\index{Renault@{Renault}!set\_refresh\_token@{set\_refresh\_token}}
+\index{set\_refresh\_token@{set\_refresh\_token}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{set\_refresh\_token()}{set\_refresh\_token()}}
+{\footnotesize\ttfamily def set\+\_\+refresh\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{refresh\+\_\+token }\end{DoxyParamCaption})}
+
+
+
+sets a new login\+\_\+token and updates the according member variables 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_acc0cbc01b1631d92dd2409d766703c8d}{Vehicle}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRenault_1_1Renault_a19037fe1897f5e448005036281a2979b}\label{classRenault_1_1Renault_a19037fe1897f5e448005036281a2979b}} 
+\index{Renault@{Renault}!accountId@{accountId}}
+\index{accountId@{accountId}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{accountId}{accountId}}
+{\footnotesize\ttfamily account\+Id}
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a615e49373619144151a614561d709b51}\label{classRenault_1_1Renault_a615e49373619144151a614561d709b51}} 
+\index{Renault@{Renault}!apikey@{apikey}}
+\index{apikey@{apikey}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{apikey}{apikey}}
+{\footnotesize\ttfamily apikey}
+
+
+
+apikey is subject to change, check here for latest \char`\"{}gigya\+\_\+apikey\char`\"{} (in our case DE)\+: \href{https://raw.githubusercontent.com/hacf-fr/renault-api/main/src/renault_api/const.py}{\texttt{ https\+://raw.\+githubusercontent.\+com/hacf-\/fr/renault-\/api/main/src/renault\+\_\+api/const.\+py}} updatekey is subject to change, check provided url for latest \char`\"{}\+Kamereon API\char`\"{} key. 
+
+Alternatively try\+: \href{https://raw.githubusercontent.com/db-EV/ZoePHP/main/src/api-keys.php}{\texttt{ https\+://raw.\+githubusercontent.\+com/db-\/\+EV/\+Zoe\+PHP/main/src/api-\/keys.\+php}} \mbox{\Hypertarget{classRenault_1_1Renault_a1fa302baef54f3e7f08e6831fcf3e191}\label{classRenault_1_1Renault_a1fa302baef54f3e7f08e6831fcf3e191}} 
+\index{Renault@{Renault}!argv@{argv}}
+\index{argv@{argv}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{argv}{argv}}
+{\footnotesize\ttfamily argv}
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a811cdd6010e3993b30e7040faff3e882}\label{classRenault_1_1Renault_a811cdd6010e3993b30e7040faff3e882}} 
+\index{Renault@{Renault}!id\_token@{id\_token}}
+\index{id\_token@{id\_token}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{id\_token}{id\_token}}
+{\footnotesize\ttfamily id\+\_\+token}
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a935a980a0df3d0472f7ace716fb5bed9}\label{classRenault_1_1Renault_a935a980a0df3d0472f7ace716fb5bed9}} 
+\index{Renault@{Renault}!login\_token@{login\_token}}
+\index{login\_token@{login\_token}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{login\_token}{login\_token}}
+{\footnotesize\ttfamily login\+\_\+token}
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a4bc8f886a9f1544e31feccab665cf8d8}\label{classRenault_1_1Renault_a4bc8f886a9f1544e31feccab665cf8d8}} 
+\index{Renault@{Renault}!mf\_name@{mf\_name}}
+\index{mf\_name@{mf\_name}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{mf\_name}{mf\_name}}
+{\footnotesize\ttfamily mf\+\_\+name}
+
+
+
+Manufacture name as String in lowercase \char`\"{}renault\char`\"{} or \char`\"{}dacia\char`\"{}. 
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a606f0cf29092ac74c929a7b17bcae905}\label{classRenault_1_1Renault_a606f0cf29092ac74c929a7b17bcae905}} 
+\index{Renault@{Renault}!mf\_tf\_path@{mf\_tf\_path}}
+\index{mf\_tf\_path@{mf\_tf\_path}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{mf\_tf\_path}{mf\_tf\_path}}
+{\footnotesize\ttfamily mf\+\_\+tf\+\_\+path}
+
+\mbox{\Hypertarget{classRenault_1_1Renault_ab227f382fb8de84047b67dc7a3c4c3c6}\label{classRenault_1_1Renault_ab227f382fb8de84047b67dc7a3c4c3c6}} 
+\index{Renault@{Renault}!updatekey@{updatekey}}
+\index{updatekey@{updatekey}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{updatekey}{updatekey}}
+{\footnotesize\ttfamily updatekey}
+
+\mbox{\Hypertarget{classRenault_1_1Renault_a0637a204a383bee69b03919bce9e8c3d}\label{classRenault_1_1Renault_a0637a204a383bee69b03919bce9e8c3d}} 
+\index{Renault@{Renault}!vin@{vin}}
+\index{vin@{vin}!Renault@{Renault}}
+\doxysubsubsection{\texorpdfstring{vin}{vin}}
+{\footnotesize\ttfamily vin}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ \+ /grand-\/theft-\/app-\/2.\+0/gta2\+Tool/src/\mbox{\hyperlink{Renault_8py}{Renault.\+py}}\end{DoxyCompactItemize}

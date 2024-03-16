@@ -1,0 +1,213 @@
+\hypertarget{classTemplate_1_1Template}{}\doxysection{Template Class Reference}
+\label{classTemplate_1_1Template}\index{Template@{Template}}
+
+
+\mbox{\hyperlink{classTemplate_1_1Template}{Template}} Class implements all \mbox{\hyperlink{classTemplate_1_1Template}{Template}} api calls extends \mbox{\hyperlink{namespaceVehicle}{Vehicle}} Class.  
+
+
+
+
+Inheritance diagram for Template\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{classTemplate_1_1Template__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Template\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{classTemplate_1_1Template__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classTemplate_1_1Template_aacd6f48c7da102742977a2d655247c0a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classVehicle_1_1Vehicle_aa9e289eddb591991c9bc7321dc5b186b}{verbose}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classTemplate_1_1Template}{Template}} Constructur Read the Template-\/csv-\/file content such as access token, refresh token and metadata than assign their values to the member variables of \mbox{\hyperlink{classTemplate_1_1Template}{Template}} class. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classTemplate_1_1Template_a99852478834df089b9df889b416e3c10}{cred\+\_\+auth}} (self, username, password)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classTemplate_1_1Template}{Template}} for generating access token, refresh token from credentials set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response and call setattr\+\_\+from\+\_\+res(self.\+logger.\+response,$\ast$self.argv) $\ast$self.argv is set in constructor setattr\+\_\+from\+\_\+res sets the member variables of the class by reading new values from the response setattr\+\_\+from\+\_\+res also updates the csv file by calling update\+\_\+csv internally. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classTemplate_1_1Template_aa9656f8514b291f5272b44fdeed98989}{get\+\_\+headers}} (self, header)
+\begin{DoxyCompactList}\small\item\em internal helper\+: returns the requested HTTP Headers Dictionary example get\+\_\+headers(\char`\"{}\+TOKEN\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+AUTH\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+REQ\+\_\+\+HEADERS\char`\"{}) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classTemplate_1_1Template_a74800772cf8b53c98e2c5c34dc513a03}{get\+\_\+ressource\+\_\+template}} (self)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classTemplate_1_1Template}{Template}} for get ressource set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classTemplate_1_1Template_a1148ea306cd8c4db897976d7c04a4cbc}{refresh\+\_\+tokens}} (self)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classTemplate_1_1Template}{Template}} for generating access token using refresh token set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response and call setattr\+\_\+from\+\_\+res(self.\+logger.\+response,$\ast$self.argv) $\ast$self.argv is set in constructor setattr\+\_\+from\+\_\+res sets the member variables of the class by reading new values from the response setattr\+\_\+from\+\_\+res also updates the csv file by calling update\+\_\+csv internally. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classTemplate_1_1Template_a0fef7505065af718e8b7d89d9db2c3c9}{set\+\_\+access\+\_\+token}} (self, \mbox{\hyperlink{classTemplate_1_1Template_a38290dc65090f0a09641e10c0b5252e9}{access\+\_\+token}})
+\begin{DoxyCompactList}\small\item\em set the member variable access\+\_\+token and then calls the function update\+\_\+csv to update he csv-\/file \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classTemplate_1_1Template_acc0cbc01b1631d92dd2409d766703c8d}{set\+\_\+refresh\+\_\+token}} (self, \mbox{\hyperlink{classTemplate_1_1Template_a125e10f98fd036b472cfed465af01ae0}{refresh\+\_\+token}})
+\begin{DoxyCompactList}\small\item\em ... more api requests \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTemplate_1_1Template_a38290dc65090f0a09641e10c0b5252e9}{access\+\_\+token}}
+\item 
+\mbox{\hyperlink{classTemplate_1_1Template_a1fa302baef54f3e7f08e6831fcf3e191}{argv}}
+\begin{DoxyCompactList}\small\item\em access\+\_\+token, refresh\+\_\+token, template\+\_\+token1 ... are the refresh\+\_\+tokens and cred\+\_\+auth response\textquotesingle{}s attributes \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTemplate_1_1Template_a4bc8f886a9f1544e31feccab665cf8d8}{mf\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em Manufacturer name as String in lowercase \char`\"{}template\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTemplate_1_1Template_a125e10f98fd036b472cfed465af01ae0}{refresh\+\_\+token}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classTemplate_1_1Template}{Template}} Class implements all \mbox{\hyperlink{classTemplate_1_1Template}{Template}} api calls extends \mbox{\hyperlink{namespaceVehicle}{Vehicle}} Class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTemplate_1_1Template_aacd6f48c7da102742977a2d655247c0a}\label{classTemplate_1_1Template_aacd6f48c7da102742977a2d655247c0a}} 
+\index{Template@{Template}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Template@{Template}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{verbose }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classTemplate_1_1Template}{Template}} Constructur Read the Template-\/csv-\/file content such as access token, refresh token and metadata than assign their values to the member variables of \mbox{\hyperlink{classTemplate_1_1Template}{Template}} class. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_aeaa816301f26b03d6adef2a399ebb9d7}{Vehicle}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTemplate_1_1Template_a99852478834df089b9df889b416e3c10}\label{classTemplate_1_1Template_a99852478834df089b9df889b416e3c10}} 
+\index{Template@{Template}!cred\_auth@{cred\_auth}}
+\index{cred\_auth@{cred\_auth}!Template@{Template}}
+\doxysubsubsection{\texorpdfstring{cred\_auth()}{cred\_auth()}}
+{\footnotesize\ttfamily def cred\+\_\+auth (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{username,  }\item[{}]{password }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classTemplate_1_1Template}{Template}} for generating access token, refresh token from credentials set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response and call setattr\+\_\+from\+\_\+res(self.\+logger.\+response,$\ast$self.argv) $\ast$self.argv is set in constructor setattr\+\_\+from\+\_\+res sets the member variables of the class by reading new values from the response setattr\+\_\+from\+\_\+res also updates the csv file by calling update\+\_\+csv internally. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & email \\
+\hline
+{\em password} & password \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_a99852478834df089b9df889b416e3c10}{Vehicle}}.
+
+\mbox{\Hypertarget{classTemplate_1_1Template_aa9656f8514b291f5272b44fdeed98989}\label{classTemplate_1_1Template_aa9656f8514b291f5272b44fdeed98989}} 
+\index{Template@{Template}!get\_headers@{get\_headers}}
+\index{get\_headers@{get\_headers}!Template@{Template}}
+\doxysubsubsection{\texorpdfstring{get\_headers()}{get\_headers()}}
+{\footnotesize\ttfamily def get\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{header }\end{DoxyParamCaption})}
+
+
+
+internal helper\+: returns the requested HTTP Headers Dictionary example get\+\_\+headers(\char`\"{}\+TOKEN\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+AUTH\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+REQ\+\_\+\+HEADERS\char`\"{}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & of Dictionary to be returned TOKEN\+\_\+\+HEADERS, AUTH\+\_\+\+HEADERS, REQ\+\_\+\+HEADERS \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dictionary of HTTP Headers to send with the request 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTemplate_1_1Template_a74800772cf8b53c98e2c5c34dc513a03}\label{classTemplate_1_1Template_a74800772cf8b53c98e2c5c34dc513a03}} 
+\index{Template@{Template}!get\_ressource\_template@{get\_ressource\_template}}
+\index{get\_ressource\_template@{get\_ressource\_template}!Template@{Template}}
+\doxysubsubsection{\texorpdfstring{get\_ressource\_template()}{get\_ressource\_template()}}
+{\footnotesize\ttfamily def get\+\_\+ressource\+\_\+template (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classTemplate_1_1Template}{Template}} for get ressource set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response. 
+
+\mbox{\Hypertarget{classTemplate_1_1Template_a1148ea306cd8c4db897976d7c04a4cbc}\label{classTemplate_1_1Template_a1148ea306cd8c4db897976d7c04a4cbc}} 
+\index{Template@{Template}!refresh\_tokens@{refresh\_tokens}}
+\index{refresh\_tokens@{refresh\_tokens}!Template@{Template}}
+\doxysubsubsection{\texorpdfstring{refresh\_tokens()}{refresh\_tokens()}}
+{\footnotesize\ttfamily def refresh\+\_\+tokens (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classTemplate_1_1Template}{Template}} for generating access token using refresh token set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response and call setattr\+\_\+from\+\_\+res(self.\+logger.\+response,$\ast$self.argv) $\ast$self.argv is set in constructor setattr\+\_\+from\+\_\+res sets the member variables of the class by reading new values from the response setattr\+\_\+from\+\_\+res also updates the csv file by calling update\+\_\+csv internally. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_a1148ea306cd8c4db897976d7c04a4cbc}{Vehicle}}.
+
+\mbox{\Hypertarget{classTemplate_1_1Template_a0fef7505065af718e8b7d89d9db2c3c9}\label{classTemplate_1_1Template_a0fef7505065af718e8b7d89d9db2c3c9}} 
+\index{Template@{Template}!set\_access\_token@{set\_access\_token}}
+\index{set\_access\_token@{set\_access\_token}!Template@{Template}}
+\doxysubsubsection{\texorpdfstring{set\_access\_token()}{set\_access\_token()}}
+{\footnotesize\ttfamily def set\+\_\+access\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{access\+\_\+token }\end{DoxyParamCaption})}
+
+
+
+set the member variable access\+\_\+token and then calls the function update\+\_\+csv to update he csv-\/file 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_a0fef7505065af718e8b7d89d9db2c3c9}{Vehicle}}.
+
+\mbox{\Hypertarget{classTemplate_1_1Template_acc0cbc01b1631d92dd2409d766703c8d}\label{classTemplate_1_1Template_acc0cbc01b1631d92dd2409d766703c8d}} 
+\index{Template@{Template}!set\_refresh\_token@{set\_refresh\_token}}
+\index{set\_refresh\_token@{set\_refresh\_token}!Template@{Template}}
+\doxysubsubsection{\texorpdfstring{set\_refresh\_token()}{set\_refresh\_token()}}
+{\footnotesize\ttfamily def set\+\_\+refresh\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{refresh\+\_\+token }\end{DoxyParamCaption})}
+
+
+
+... more api requests 
+
+set the member variable refresh\+\_\+token and then calls the function refresh\+\_\+tokens to acquire new tokens 
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_acc0cbc01b1631d92dd2409d766703c8d}{Vehicle}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTemplate_1_1Template_a38290dc65090f0a09641e10c0b5252e9}\label{classTemplate_1_1Template_a38290dc65090f0a09641e10c0b5252e9}} 
+\index{Template@{Template}!access\_token@{access\_token}}
+\index{access\_token@{access\_token}!Template@{Template}}
+\doxysubsubsection{\texorpdfstring{access\_token}{access\_token}}
+{\footnotesize\ttfamily access\+\_\+token}
+
+\mbox{\Hypertarget{classTemplate_1_1Template_a1fa302baef54f3e7f08e6831fcf3e191}\label{classTemplate_1_1Template_a1fa302baef54f3e7f08e6831fcf3e191}} 
+\index{Template@{Template}!argv@{argv}}
+\index{argv@{argv}!Template@{Template}}
+\doxysubsubsection{\texorpdfstring{argv}{argv}}
+{\footnotesize\ttfamily argv}
+
+
+
+access\+\_\+token, refresh\+\_\+token, template\+\_\+token1 ... are the refresh\+\_\+tokens and cred\+\_\+auth response\textquotesingle{}s attributes 
+
+\mbox{\Hypertarget{classTemplate_1_1Template_a4bc8f886a9f1544e31feccab665cf8d8}\label{classTemplate_1_1Template_a4bc8f886a9f1544e31feccab665cf8d8}} 
+\index{Template@{Template}!mf\_name@{mf\_name}}
+\index{mf\_name@{mf\_name}!Template@{Template}}
+\doxysubsubsection{\texorpdfstring{mf\_name}{mf\_name}}
+{\footnotesize\ttfamily mf\+\_\+name}
+
+
+
+Manufacturer name as String in lowercase \char`\"{}template\char`\"{}. 
+
+\mbox{\Hypertarget{classTemplate_1_1Template_a125e10f98fd036b472cfed465af01ae0}\label{classTemplate_1_1Template_a125e10f98fd036b472cfed465af01ae0}} 
+\index{Template@{Template}!refresh\_token@{refresh\_token}}
+\index{refresh\_token@{refresh\_token}!Template@{Template}}
+\doxysubsubsection{\texorpdfstring{refresh\_token}{refresh\_token}}
+{\footnotesize\ttfamily refresh\+\_\+token}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ \+ /grand-\/theft-\/app-\/2.\+0/gta2\+Tool/src/\mbox{\hyperlink{Template_8py}{Template.\+py}}\end{DoxyCompactItemize}

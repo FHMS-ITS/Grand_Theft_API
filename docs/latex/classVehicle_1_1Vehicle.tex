@@ -1,0 +1,258 @@
+\hypertarget{classVehicle_1_1Vehicle}{}\doxysection{Vehicle Class Reference}
+\label{classVehicle_1_1Vehicle}\index{Vehicle@{Vehicle}}
+
+
+abstract class used as superclass for manufacturer classes includes a number of abstract methods (@abc.abstractmethod) that need to be implemented in each manufacturer\textquotesingle{}s class  
+
+
+
+
+Inheritance diagram for Vehicle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVehicle_1_1Vehicle__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classVehicle_1_1Vehicle_aeaa816301f26b03d6adef2a399ebb9d7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classVehicle_1_1Vehicle_a96ea688ee230b5335846e413d82450fd}{tokens\+\_\+path}}, \mbox{\hyperlink{classVehicle_1_1Vehicle_aa9e289eddb591991c9bc7321dc5b186b}{verbose}})
+\begin{DoxyCompactList}\small\item\em constructor that will be called in the subclasses \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classVehicle_1_1Vehicle_a99852478834df089b9df889b416e3c10}{cred\+\_\+auth}} (self, username, password)
+\begin{DoxyCompactList}\small\item\em Function for generating access token, refresh token from credentials set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response and call setattr\+\_\+from\+\_\+res(self.\+logger.\+response,$\ast$self.argv) $\ast$self.argv is set in constructor setattr\+\_\+from\+\_\+res sets the member variables of the class by reading new values from the response setattr\+\_\+from\+\_\+res also updates the csv file by calling update\+\_\+csv internally. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classVehicle_1_1Vehicle_a1148ea306cd8c4db897976d7c04a4cbc}{refresh\+\_\+tokens}} (self)
+\begin{DoxyCompactList}\small\item\em Function for generating access token using refresh token set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response and call setattr\+\_\+from\+\_\+res(self.\+logger.\+response,$\ast$self.argv) $\ast$self.argv is set in constructor setattr\+\_\+from\+\_\+res sets the member variables of the class by reading new values from the response setattr\+\_\+from\+\_\+res also updates the csv file by calling update\+\_\+csv internally. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classVehicle_1_1Vehicle_a0fef7505065af718e8b7d89d9db2c3c9}{set\+\_\+access\+\_\+token}} (self, \mbox{\hyperlink{classVehicle_1_1Vehicle_a38290dc65090f0a09641e10c0b5252e9}{access\+\_\+token}})
+\begin{DoxyCompactList}\small\item\em following abstract functions have to be implemented in each subclass, for examples on how to implement check documentation of \mbox{\hyperlink{Template_8py}{Template.\+py}} \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classVehicle_1_1Vehicle_acc0cbc01b1631d92dd2409d766703c8d}{set\+\_\+refresh\+\_\+token}} (self, \mbox{\hyperlink{classVehicle_1_1Vehicle_a125e10f98fd036b472cfed465af01ae0}{refresh\+\_\+token}})
+\begin{DoxyCompactList}\small\item\em set the member variable refresh\+\_\+token and then calls the function refresh\+\_\+tokens to acquire new tokens \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classVehicle_1_1Vehicle_a406fa8f1e21701d21dcf25045477a941}{setattr\+\_\+from\+\_\+csv}} (self, $\ast$argv)
+\begin{DoxyCompactList}\small\item\em Function for setting attributes given in argv by reading them from csv. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classVehicle_1_1Vehicle_a208a50ad2dac2309ffb30f4191068a0b}{setattr\+\_\+from\+\_\+res}} (self, requests.\+Response response, $\ast$argv)
+\begin{DoxyCompactList}\small\item\em Function for setting attributes given in argv by extracting them from a HTTP response. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classVehicle_1_1Vehicle_a5ae524241edfb8498c46a4733a1ec62a}{update\+\_\+csv}} (self, $\ast$argv)
+\begin{DoxyCompactList}\small\item\em Function for updating the manufacturer\textquotesingle{}s csv file. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classVehicle_1_1Vehicle_ae644a6914653084fa3ec00cd9327caf6}{vprint}} (self, $\ast$args)
+\begin{DoxyCompactList}\small\item\em Function to only print debug info if verbose is set to True. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVehicle_1_1Vehicle_a38290dc65090f0a09641e10c0b5252e9}{access\+\_\+token}}
+\item 
+\mbox{\hyperlink{classVehicle_1_1Vehicle_a0b14e488ae28d98d262453f3e9cd6e4d}{logger}}
+\item 
+\mbox{\hyperlink{classVehicle_1_1Vehicle_a4bc8f886a9f1544e31feccab665cf8d8}{mf\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em Manufacture name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVehicle_1_1Vehicle_a125e10f98fd036b472cfed465af01ae0}{refresh\+\_\+token}}
+\item 
+\mbox{\hyperlink{classVehicle_1_1Vehicle_a96ea688ee230b5335846e413d82450fd}{tokens\+\_\+path}}
+\begin{DoxyCompactList}\small\item\em path of csv configuration file \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVehicle_1_1Vehicle_aa9e289eddb591991c9bc7321dc5b186b}{verbose}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+abstract class used as superclass for manufacturer classes includes a number of abstract methods (@abc.abstractmethod) that need to be implemented in each manufacturer\textquotesingle{}s class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVehicle_1_1Vehicle_aeaa816301f26b03d6adef2a399ebb9d7}\label{classVehicle_1_1Vehicle_aeaa816301f26b03d6adef2a399ebb9d7}} 
+\index{Vehicle@{Vehicle}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tokens\+\_\+path,  }\item[{}]{verbose }\end{DoxyParamCaption})}
+
+
+
+constructor that will be called in the subclasses 
+
+
+\begin{DoxyParams}{Parameters}
+{\em verbose} & verbose flag is given by subclass and passed on to \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} \\
+\hline
+{\em tokens\+\_\+path} & tokens\+\_\+path also given by subclass \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classAudi_1_1Audi_aacd6f48c7da102742977a2d655247c0a}{Audi}}, \mbox{\hyperlink{classBmw_1_1Bmw_aacd6f48c7da102742977a2d655247c0a}{Bmw}}, \mbox{\hyperlink{classDacia_1_1Dacia_aacd6f48c7da102742977a2d655247c0a}{Dacia}}, \mbox{\hyperlink{classFord_1_1Ford_aacd6f48c7da102742977a2d655247c0a}{Ford}}, \mbox{\hyperlink{classHyundai_1_1Hyundai_aacd6f48c7da102742977a2d655247c0a}{Hyundai}}, \mbox{\hyperlink{classMercedes_1_1Mercedes_aacd6f48c7da102742977a2d655247c0a}{Mercedes}}, \mbox{\hyperlink{classRenault_1_1Renault_aacd6f48c7da102742977a2d655247c0a}{Renault}}, and \mbox{\hyperlink{classTemplate_1_1Template_aacd6f48c7da102742977a2d655247c0a}{Template}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVehicle_1_1Vehicle_a99852478834df089b9df889b416e3c10}\label{classVehicle_1_1Vehicle_a99852478834df089b9df889b416e3c10}} 
+\index{Vehicle@{Vehicle}!cred\_auth@{cred\_auth}}
+\index{cred\_auth@{cred\_auth}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{cred\_auth()}{cred\_auth()}}
+{\footnotesize\ttfamily def cred\+\_\+auth (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{username,  }\item[{}]{password }\end{DoxyParamCaption})}
+
+
+
+Function for generating access token, refresh token from credentials set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response and call setattr\+\_\+from\+\_\+res(self.\+logger.\+response,$\ast$self.argv) $\ast$self.argv is set in constructor setattr\+\_\+from\+\_\+res sets the member variables of the class by reading new values from the response setattr\+\_\+from\+\_\+res also updates the csv file by calling update\+\_\+csv internally. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & email \\
+\hline
+{\em password} & password \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classAudi_1_1Audi_a99852478834df089b9df889b416e3c10}{Audi}}, \mbox{\hyperlink{classBmw_1_1Bmw_a99852478834df089b9df889b416e3c10}{Bmw}}, \mbox{\hyperlink{classFord_1_1Ford_a99852478834df089b9df889b416e3c10}{Ford}}, \mbox{\hyperlink{classHyundai_1_1Hyundai_a99852478834df089b9df889b416e3c10}{Hyundai}}, \mbox{\hyperlink{classRenault_1_1Renault_a99852478834df089b9df889b416e3c10}{Renault}}, \mbox{\hyperlink{classTemplate_1_1Template_a99852478834df089b9df889b416e3c10}{Template}}, and \mbox{\hyperlink{classMercedes_1_1Mercedes_a325a324d5b468972e3aca4c8cee445bd}{Mercedes}}.
+
+\mbox{\Hypertarget{classVehicle_1_1Vehicle_a1148ea306cd8c4db897976d7c04a4cbc}\label{classVehicle_1_1Vehicle_a1148ea306cd8c4db897976d7c04a4cbc}} 
+\index{Vehicle@{Vehicle}!refresh\_tokens@{refresh\_tokens}}
+\index{refresh\_tokens@{refresh\_tokens}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{refresh\_tokens()}{refresh\_tokens()}}
+{\footnotesize\ttfamily def refresh\+\_\+tokens (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Function for generating access token using refresh token set necessary info for logging using self.\+logger from \mbox{\hyperlink{namespaceLogReqs}{Log\+Reqs}} ~\newline
+ generate the request, set the response and call log\+\_\+req\+\_\+res() to log the request and response and call setattr\+\_\+from\+\_\+res(self.\+logger.\+response,$\ast$self.argv) $\ast$self.argv is set in constructor setattr\+\_\+from\+\_\+res sets the member variables of the class by reading new values from the response setattr\+\_\+from\+\_\+res also updates the csv file by calling update\+\_\+csv internally. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classAudi_1_1Audi_a1148ea306cd8c4db897976d7c04a4cbc}{Audi}}, \mbox{\hyperlink{classBmw_1_1Bmw_a1148ea306cd8c4db897976d7c04a4cbc}{Bmw}}, \mbox{\hyperlink{classFord_1_1Ford_a1148ea306cd8c4db897976d7c04a4cbc}{Ford}}, \mbox{\hyperlink{classHyundai_1_1Hyundai_a1148ea306cd8c4db897976d7c04a4cbc}{Hyundai}}, \mbox{\hyperlink{classMercedes_1_1Mercedes_a1148ea306cd8c4db897976d7c04a4cbc}{Mercedes}}, \mbox{\hyperlink{classRenault_1_1Renault_a1148ea306cd8c4db897976d7c04a4cbc}{Renault}}, and \mbox{\hyperlink{classTemplate_1_1Template_a1148ea306cd8c4db897976d7c04a4cbc}{Template}}.
+
+\mbox{\Hypertarget{classVehicle_1_1Vehicle_a0fef7505065af718e8b7d89d9db2c3c9}\label{classVehicle_1_1Vehicle_a0fef7505065af718e8b7d89d9db2c3c9}} 
+\index{Vehicle@{Vehicle}!set\_access\_token@{set\_access\_token}}
+\index{set\_access\_token@{set\_access\_token}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{set\_access\_token()}{set\_access\_token()}}
+{\footnotesize\ttfamily def set\+\_\+access\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{access\+\_\+token }\end{DoxyParamCaption})}
+
+
+
+following abstract functions have to be implemented in each subclass, for examples on how to implement check documentation of \mbox{\hyperlink{Template_8py}{Template.\+py}} 
+
+set the member variable access\+\_\+token and then calls the function update\+\_\+csv to update the csv-\/file 
+
+Reimplemented in \mbox{\hyperlink{classAudi_1_1Audi_a0fef7505065af718e8b7d89d9db2c3c9}{Audi}}, \mbox{\hyperlink{classBmw_1_1Bmw_a0fef7505065af718e8b7d89d9db2c3c9}{Bmw}}, \mbox{\hyperlink{classFord_1_1Ford_a0fef7505065af718e8b7d89d9db2c3c9}{Ford}}, \mbox{\hyperlink{classHyundai_1_1Hyundai_a0fef7505065af718e8b7d89d9db2c3c9}{Hyundai}}, \mbox{\hyperlink{classMercedes_1_1Mercedes_a0fef7505065af718e8b7d89d9db2c3c9}{Mercedes}}, \mbox{\hyperlink{classRenault_1_1Renault_a0fef7505065af718e8b7d89d9db2c3c9}{Renault}}, and \mbox{\hyperlink{classTemplate_1_1Template_a0fef7505065af718e8b7d89d9db2c3c9}{Template}}.
+
+\mbox{\Hypertarget{classVehicle_1_1Vehicle_acc0cbc01b1631d92dd2409d766703c8d}\label{classVehicle_1_1Vehicle_acc0cbc01b1631d92dd2409d766703c8d}} 
+\index{Vehicle@{Vehicle}!set\_refresh\_token@{set\_refresh\_token}}
+\index{set\_refresh\_token@{set\_refresh\_token}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{set\_refresh\_token()}{set\_refresh\_token()}}
+{\footnotesize\ttfamily def set\+\_\+refresh\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{refresh\+\_\+token }\end{DoxyParamCaption})}
+
+
+
+set the member variable refresh\+\_\+token and then calls the function refresh\+\_\+tokens to acquire new tokens 
+
+
+
+Reimplemented in \mbox{\hyperlink{classAudi_1_1Audi_acc0cbc01b1631d92dd2409d766703c8d}{Audi}}, \mbox{\hyperlink{classBmw_1_1Bmw_acc0cbc01b1631d92dd2409d766703c8d}{Bmw}}, \mbox{\hyperlink{classFord_1_1Ford_acc0cbc01b1631d92dd2409d766703c8d}{Ford}}, \mbox{\hyperlink{classHyundai_1_1Hyundai_acc0cbc01b1631d92dd2409d766703c8d}{Hyundai}}, \mbox{\hyperlink{classMercedes_1_1Mercedes_acc0cbc01b1631d92dd2409d766703c8d}{Mercedes}}, \mbox{\hyperlink{classRenault_1_1Renault_acc0cbc01b1631d92dd2409d766703c8d}{Renault}}, and \mbox{\hyperlink{classTemplate_1_1Template_acc0cbc01b1631d92dd2409d766703c8d}{Template}}.
+
+\mbox{\Hypertarget{classVehicle_1_1Vehicle_a406fa8f1e21701d21dcf25045477a941}\label{classVehicle_1_1Vehicle_a406fa8f1e21701d21dcf25045477a941}} 
+\index{Vehicle@{Vehicle}!setattr\_from\_csv@{setattr\_from\_csv}}
+\index{setattr\_from\_csv@{setattr\_from\_csv}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{setattr\_from\_csv()}{setattr\_from\_csv()}}
+{\footnotesize\ttfamily def setattr\+\_\+from\+\_\+csv (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Function for setting attributes given in argv by reading them from csv. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$argv} & caller gives the names of the attributes as string. Example\+: argv = (\char`\"{}access\+\_\+token\char`\"{},\char`\"{}refresh\+\_\+token\char`\"{},\char`\"{}expires\+\_\+in\char`\"{},\char`\"{}refresh\+\_\+expires\+\_\+in\char`\"{}) attributes included in argv that do not exist in the csv file are ignored \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVehicle_1_1Vehicle_a208a50ad2dac2309ffb30f4191068a0b}\label{classVehicle_1_1Vehicle_a208a50ad2dac2309ffb30f4191068a0b}} 
+\index{Vehicle@{Vehicle}!setattr\_from\_res@{setattr\_from\_res}}
+\index{setattr\_from\_res@{setattr\_from\_res}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{setattr\_from\_res()}{setattr\_from\_res()}}
+{\footnotesize\ttfamily def setattr\+\_\+from\+\_\+res (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{requests.\+Response}]{response,  }\item[{$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Function for setting attributes given in argv by extracting them from a HTTP response. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & an API\textquotesingle{}s response as received by python.\+requests \\
+\hline
+{\em $\ast$argv} & caller gives the names of the attributes as string. Example\+: argv = (\char`\"{}access\+\_\+token\char`\"{},\char`\"{}refresh\+\_\+token\char`\"{},\char`\"{}expires\+\_\+in\char`\"{},\char`\"{}refresh\+\_\+expires\+\_\+in\char`\"{}) attributes included in argv that do not exist in the HTTP response are ignored \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVehicle_1_1Vehicle_a5ae524241edfb8498c46a4733a1ec62a}\label{classVehicle_1_1Vehicle_a5ae524241edfb8498c46a4733a1ec62a}} 
+\index{Vehicle@{Vehicle}!update\_csv@{update\_csv}}
+\index{update\_csv@{update\_csv}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{update\_csv()}{update\_csv()}}
+{\footnotesize\ttfamily def update\+\_\+csv (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Function for updating the manufacturer\textquotesingle{}s csv file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$argv} & caller gives the names of the attributes as string. Example\+: argv = (\char`\"{}access\+\_\+token\char`\"{},\char`\"{}refresh\+\_\+token\char`\"{},\char`\"{}expires\+\_\+in\char`\"{},\char`\"{}refresh\+\_\+expires\+\_\+in\char`\"{}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVehicle_1_1Vehicle_ae644a6914653084fa3ec00cd9327caf6}\label{classVehicle_1_1Vehicle_ae644a6914653084fa3ec00cd9327caf6}} 
+\index{Vehicle@{Vehicle}!vprint@{vprint}}
+\index{vprint@{vprint}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{vprint()}{vprint()}}
+{\footnotesize\ttfamily def vprint (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Function to only print debug info if verbose is set to True. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classVehicle_1_1Vehicle_a38290dc65090f0a09641e10c0b5252e9}\label{classVehicle_1_1Vehicle_a38290dc65090f0a09641e10c0b5252e9}} 
+\index{Vehicle@{Vehicle}!access\_token@{access\_token}}
+\index{access\_token@{access\_token}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{access\_token}{access\_token}}
+{\footnotesize\ttfamily access\+\_\+token}
+
+\mbox{\Hypertarget{classVehicle_1_1Vehicle_a0b14e488ae28d98d262453f3e9cd6e4d}\label{classVehicle_1_1Vehicle_a0b14e488ae28d98d262453f3e9cd6e4d}} 
+\index{Vehicle@{Vehicle}!logger@{logger}}
+\index{logger@{logger}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily logger}
+
+\mbox{\Hypertarget{classVehicle_1_1Vehicle_a4bc8f886a9f1544e31feccab665cf8d8}\label{classVehicle_1_1Vehicle_a4bc8f886a9f1544e31feccab665cf8d8}} 
+\index{Vehicle@{Vehicle}!mf\_name@{mf\_name}}
+\index{mf\_name@{mf\_name}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{mf\_name}{mf\_name}}
+{\footnotesize\ttfamily mf\+\_\+name}
+
+
+
+Manufacture name. 
+
+\mbox{\Hypertarget{classVehicle_1_1Vehicle_a125e10f98fd036b472cfed465af01ae0}\label{classVehicle_1_1Vehicle_a125e10f98fd036b472cfed465af01ae0}} 
+\index{Vehicle@{Vehicle}!refresh\_token@{refresh\_token}}
+\index{refresh\_token@{refresh\_token}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{refresh\_token}{refresh\_token}}
+{\footnotesize\ttfamily refresh\+\_\+token}
+
+\mbox{\Hypertarget{classVehicle_1_1Vehicle_a96ea688ee230b5335846e413d82450fd}\label{classVehicle_1_1Vehicle_a96ea688ee230b5335846e413d82450fd}} 
+\index{Vehicle@{Vehicle}!tokens\_path@{tokens\_path}}
+\index{tokens\_path@{tokens\_path}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{tokens\_path}{tokens\_path}}
+{\footnotesize\ttfamily tokens\+\_\+path}
+
+
+
+path of csv configuration file 
+
+\mbox{\Hypertarget{classVehicle_1_1Vehicle_aa9e289eddb591991c9bc7321dc5b186b}\label{classVehicle_1_1Vehicle_aa9e289eddb591991c9bc7321dc5b186b}} 
+\index{Vehicle@{Vehicle}!verbose@{verbose}}
+\index{verbose@{verbose}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{verbose}{verbose}}
+{\footnotesize\ttfamily verbose}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ \+ /grand-\/theft-\/app-\/2.\+0/gta2\+Tool/src/\mbox{\hyperlink{Vehicle_8py}{Vehicle.\+py}}\end{DoxyCompactItemize}

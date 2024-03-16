@@ -1,0 +1,290 @@
+\hypertarget{classBmw_1_1Bmw}{}\doxysection{Bmw Class Reference}
+\label{classBmw_1_1Bmw}\index{Bmw@{Bmw}}
+
+
+\mbox{\hyperlink{classBmw_1_1Bmw}{Bmw}} Class implements BMW API calls extends \mbox{\hyperlink{namespaceVehicle}{Vehicle}} Class.  
+
+
+
+
+Inheritance diagram for Bmw\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=132pt]{classBmw_1_1Bmw__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bmw\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=132pt]{classBmw_1_1Bmw__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classBmw_1_1Bmw_aacd6f48c7da102742977a2d655247c0a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classVehicle_1_1Vehicle_aa9e289eddb591991c9bc7321dc5b186b}{verbose}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classBmw_1_1Bmw}{Bmw}} Constructur Read the bmw-\/csv-\/file content such as access token, refresh token and metadata than assign their values to the member variables of \mbox{\hyperlink{classBmw_1_1Bmw}{Bmw}} class. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classBmw_1_1Bmw_a99852478834df089b9df889b416e3c10}{cred\+\_\+auth}} (self, username, password)
+\begin{DoxyCompactList}\small\item\em generate new access token, refresh token from credentials and update the member variables and bmw-\/csv-\/file \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classBmw_1_1Bmw_a05aa7bd4a2a239aa624c78afddb7186b}{get\+\_\+charging\+\_\+sessions}} (self)
+\begin{DoxyCompactList}\small\item\em build and send request for get charging sessions method user input\+: month the month for which data is to be requested (1-\/12) user input\+: the year for which data is to be requested (example\+: 2023) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classBmw_1_1Bmw_ad5524b6f9bbf760f7da0ac53725a20b6}{get\+\_\+charging\+\_\+statistics}} (self)
+\begin{DoxyCompactList}\small\item\em build and send request for get charging statistics method \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classBmw_1_1Bmw_aa9656f8514b291f5272b44fdeed98989}{get\+\_\+headers}} (self, header)
+\begin{DoxyCompactList}\small\item\em returns the requested HTTP Headers Dictionary of bmw requests example get\+\_\+headers(\char`\"{}\+TOKEN\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+AUTH\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+REQ\+\_\+\+HEADERS\char`\"{}) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classBmw_1_1Bmw_a46e189dfe465a3463ea9a0fba87bf237}{get\+\_\+user\+\_\+data}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get general data on the user and the account. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classBmw_1_1Bmw_addb54d6209f81380334d9ffd99cb4e0c}{get\+\_\+vehicles}} (self)
+\begin{DoxyCompactList}\small\item\em API request to get the vehicle(s) linked to the user\textquotesingle{}s account. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classBmw_1_1Bmw_a1148ea306cd8c4db897976d7c04a4cbc}{refresh\+\_\+tokens}} (self)
+\begin{DoxyCompactList}\small\item\em generate new access token and update the member variabls and bmw-\/csv-\/file \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classBmw_1_1Bmw_a0fef7505065af718e8b7d89d9db2c3c9}{set\+\_\+access\+\_\+token}} (self, \mbox{\hyperlink{classBmw_1_1Bmw_a38290dc65090f0a09641e10c0b5252e9}{access\+\_\+token}})
+\begin{DoxyCompactList}\small\item\em set the member variable access\+\_\+token and then calls the function update\+\_\+csv to update he csv-\/file \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classBmw_1_1Bmw_acc0cbc01b1631d92dd2409d766703c8d}{set\+\_\+refresh\+\_\+token}} (self, \mbox{\hyperlink{classBmw_1_1Bmw_a125e10f98fd036b472cfed465af01ae0}{refresh\+\_\+token}})
+\begin{DoxyCompactList}\small\item\em set the member variable refresh\+\_\+token and then calls the function refresh\+\_\+tokens to acquire new tokens \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBmw_1_1Bmw_a38290dc65090f0a09641e10c0b5252e9}{access\+\_\+token}}
+\item 
+\mbox{\hyperlink{classBmw_1_1Bmw_a1fa302baef54f3e7f08e6831fcf3e191}{argv}}
+\item 
+\mbox{\hyperlink{classBmw_1_1Bmw_aa752c2b9fc0dc28f6f1ade018144d735}{expires\+\_\+in}}
+\item 
+\mbox{\hyperlink{classBmw_1_1Bmw_ae351ffb1d8d953e1584fbd2a8d7fc4b3}{gcid}}
+\item 
+\mbox{\hyperlink{classBmw_1_1Bmw_a811cdd6010e3993b30e7040faff3e882}{id\+\_\+token}}
+\item 
+\mbox{\hyperlink{classBmw_1_1Bmw_a4bc8f886a9f1544e31feccab665cf8d8}{mf\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em Manufacturer name as String in lowercase \char`\"{}bmw\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBmw_1_1Bmw_a125e10f98fd036b472cfed465af01ae0}{refresh\+\_\+token}}
+\item 
+\mbox{\hyperlink{classBmw_1_1Bmw_a6e0326b60f0bd67c213b500f753f83b0}{scope}}
+\item 
+\mbox{\hyperlink{classBmw_1_1Bmw_afe5ef662303b6b710ea6ee1a944bad0d}{token\+\_\+type}}
+\item 
+\mbox{\hyperlink{classBmw_1_1Bmw_a0637a204a383bee69b03919bce9e8c3d}{vin}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classBmw_1_1Bmw}{Bmw}} Class implements BMW API calls extends \mbox{\hyperlink{namespaceVehicle}{Vehicle}} Class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBmw_1_1Bmw_aacd6f48c7da102742977a2d655247c0a}\label{classBmw_1_1Bmw_aacd6f48c7da102742977a2d655247c0a}} 
+\index{Bmw@{Bmw}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{verbose }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classBmw_1_1Bmw}{Bmw}} Constructur Read the bmw-\/csv-\/file content such as access token, refresh token and metadata than assign their values to the member variables of \mbox{\hyperlink{classBmw_1_1Bmw}{Bmw}} class. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_aeaa816301f26b03d6adef2a399ebb9d7}{Vehicle}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBmw_1_1Bmw_a99852478834df089b9df889b416e3c10}\label{classBmw_1_1Bmw_a99852478834df089b9df889b416e3c10}} 
+\index{Bmw@{Bmw}!cred\_auth@{cred\_auth}}
+\index{cred\_auth@{cred\_auth}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{cred\_auth()}{cred\_auth()}}
+{\footnotesize\ttfamily def cred\+\_\+auth (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{username,  }\item[{}]{password }\end{DoxyParamCaption})}
+
+
+
+generate new access token, refresh token from credentials and update the member variables and bmw-\/csv-\/file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & email \\
+\hline
+{\em password} & password \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+$\sim$/docs/drafts/bmw auth.\+png 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_a99852478834df089b9df889b416e3c10}{Vehicle}}.
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_a05aa7bd4a2a239aa624c78afddb7186b}\label{classBmw_1_1Bmw_a05aa7bd4a2a239aa624c78afddb7186b}} 
+\index{Bmw@{Bmw}!get\_charging\_sessions@{get\_charging\_sessions}}
+\index{get\_charging\_sessions@{get\_charging\_sessions}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{get\_charging\_sessions()}{get\_charging\_sessions()}}
+{\footnotesize\ttfamily def get\+\_\+charging\+\_\+sessions (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+build and send request for get charging sessions method user input\+: month the month for which data is to be requested (1-\/12) user input\+: the year for which data is to be requested (example\+: 2023) 
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_ad5524b6f9bbf760f7da0ac53725a20b6}\label{classBmw_1_1Bmw_ad5524b6f9bbf760f7da0ac53725a20b6}} 
+\index{Bmw@{Bmw}!get\_charging\_statistics@{get\_charging\_statistics}}
+\index{get\_charging\_statistics@{get\_charging\_statistics}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{get\_charging\_statistics()}{get\_charging\_statistics()}}
+{\footnotesize\ttfamily def get\+\_\+charging\+\_\+statistics (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+build and send request for get charging statistics method 
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_aa9656f8514b291f5272b44fdeed98989}\label{classBmw_1_1Bmw_aa9656f8514b291f5272b44fdeed98989}} 
+\index{Bmw@{Bmw}!get\_headers@{get\_headers}}
+\index{get\_headers@{get\_headers}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{get\_headers()}{get\_headers()}}
+{\footnotesize\ttfamily def get\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{header }\end{DoxyParamCaption})}
+
+
+
+returns the requested HTTP Headers Dictionary of bmw requests example get\+\_\+headers(\char`\"{}\+TOKEN\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+AUTH\+\_\+\+HEADERS\char`\"{}), get\+\_\+headers(\char`\"{}\+REQ\+\_\+\+HEADERS\char`\"{}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & of Dictionary to be returned TOKEN\+\_\+\+HEADERS, AUTH\+\_\+\+HEADERS, AUTH\+\_\+\+HEADERS\+\_\+3, REQ\+\_\+\+HEADERS \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dictionary of HTTP Headers to send with the request 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBmw_1_1Bmw_a46e189dfe465a3463ea9a0fba87bf237}\label{classBmw_1_1Bmw_a46e189dfe465a3463ea9a0fba87bf237}} 
+\index{Bmw@{Bmw}!get\_user\_data@{get\_user\_data}}
+\index{get\_user\_data@{get\_user\_data}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{get\_user\_data()}{get\_user\_data()}}
+{\footnotesize\ttfamily def get\+\_\+user\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get general data on the user and the account. 
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_addb54d6209f81380334d9ffd99cb4e0c}\label{classBmw_1_1Bmw_addb54d6209f81380334d9ffd99cb4e0c}} 
+\index{Bmw@{Bmw}!get\_vehicles@{get\_vehicles}}
+\index{get\_vehicles@{get\_vehicles}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{get\_vehicles()}{get\_vehicles()}}
+{\footnotesize\ttfamily def get\+\_\+vehicles (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+API request to get the vehicle(s) linked to the user\textquotesingle{}s account. 
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_a1148ea306cd8c4db897976d7c04a4cbc}\label{classBmw_1_1Bmw_a1148ea306cd8c4db897976d7c04a4cbc}} 
+\index{Bmw@{Bmw}!refresh\_tokens@{refresh\_tokens}}
+\index{refresh\_tokens@{refresh\_tokens}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{refresh\_tokens()}{refresh\_tokens()}}
+{\footnotesize\ttfamily def refresh\+\_\+tokens (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+generate new access token and update the member variabls and bmw-\/csv-\/file 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_a1148ea306cd8c4db897976d7c04a4cbc}{Vehicle}}.
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_a0fef7505065af718e8b7d89d9db2c3c9}\label{classBmw_1_1Bmw_a0fef7505065af718e8b7d89d9db2c3c9}} 
+\index{Bmw@{Bmw}!set\_access\_token@{set\_access\_token}}
+\index{set\_access\_token@{set\_access\_token}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{set\_access\_token()}{set\_access\_token()}}
+{\footnotesize\ttfamily def set\+\_\+access\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{access\+\_\+token }\end{DoxyParamCaption})}
+
+
+
+set the member variable access\+\_\+token and then calls the function update\+\_\+csv to update he csv-\/file 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_a0fef7505065af718e8b7d89d9db2c3c9}{Vehicle}}.
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_acc0cbc01b1631d92dd2409d766703c8d}\label{classBmw_1_1Bmw_acc0cbc01b1631d92dd2409d766703c8d}} 
+\index{Bmw@{Bmw}!set\_refresh\_token@{set\_refresh\_token}}
+\index{set\_refresh\_token@{set\_refresh\_token}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{set\_refresh\_token()}{set\_refresh\_token()}}
+{\footnotesize\ttfamily def set\+\_\+refresh\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{refresh\+\_\+token }\end{DoxyParamCaption})}
+
+
+
+set the member variable refresh\+\_\+token and then calls the function refresh\+\_\+tokens to acquire new tokens 
+
+
+
+Reimplemented from \mbox{\hyperlink{classVehicle_1_1Vehicle_acc0cbc01b1631d92dd2409d766703c8d}{Vehicle}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBmw_1_1Bmw_a38290dc65090f0a09641e10c0b5252e9}\label{classBmw_1_1Bmw_a38290dc65090f0a09641e10c0b5252e9}} 
+\index{Bmw@{Bmw}!access\_token@{access\_token}}
+\index{access\_token@{access\_token}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{access\_token}{access\_token}}
+{\footnotesize\ttfamily access\+\_\+token}
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_a1fa302baef54f3e7f08e6831fcf3e191}\label{classBmw_1_1Bmw_a1fa302baef54f3e7f08e6831fcf3e191}} 
+\index{Bmw@{Bmw}!argv@{argv}}
+\index{argv@{argv}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{argv}{argv}}
+{\footnotesize\ttfamily argv}
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_aa752c2b9fc0dc28f6f1ade018144d735}\label{classBmw_1_1Bmw_aa752c2b9fc0dc28f6f1ade018144d735}} 
+\index{Bmw@{Bmw}!expires\_in@{expires\_in}}
+\index{expires\_in@{expires\_in}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{expires\_in}{expires\_in}}
+{\footnotesize\ttfamily expires\+\_\+in}
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_ae351ffb1d8d953e1584fbd2a8d7fc4b3}\label{classBmw_1_1Bmw_ae351ffb1d8d953e1584fbd2a8d7fc4b3}} 
+\index{Bmw@{Bmw}!gcid@{gcid}}
+\index{gcid@{gcid}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{gcid}{gcid}}
+{\footnotesize\ttfamily gcid}
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_a811cdd6010e3993b30e7040faff3e882}\label{classBmw_1_1Bmw_a811cdd6010e3993b30e7040faff3e882}} 
+\index{Bmw@{Bmw}!id\_token@{id\_token}}
+\index{id\_token@{id\_token}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{id\_token}{id\_token}}
+{\footnotesize\ttfamily id\+\_\+token}
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_a4bc8f886a9f1544e31feccab665cf8d8}\label{classBmw_1_1Bmw_a4bc8f886a9f1544e31feccab665cf8d8}} 
+\index{Bmw@{Bmw}!mf\_name@{mf\_name}}
+\index{mf\_name@{mf\_name}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{mf\_name}{mf\_name}}
+{\footnotesize\ttfamily mf\+\_\+name}
+
+
+
+Manufacturer name as String in lowercase \char`\"{}bmw\char`\"{}. 
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_a125e10f98fd036b472cfed465af01ae0}\label{classBmw_1_1Bmw_a125e10f98fd036b472cfed465af01ae0}} 
+\index{Bmw@{Bmw}!refresh\_token@{refresh\_token}}
+\index{refresh\_token@{refresh\_token}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{refresh\_token}{refresh\_token}}
+{\footnotesize\ttfamily refresh\+\_\+token}
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_a6e0326b60f0bd67c213b500f753f83b0}\label{classBmw_1_1Bmw_a6e0326b60f0bd67c213b500f753f83b0}} 
+\index{Bmw@{Bmw}!scope@{scope}}
+\index{scope@{scope}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{scope}{scope}}
+{\footnotesize\ttfamily scope}
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_afe5ef662303b6b710ea6ee1a944bad0d}\label{classBmw_1_1Bmw_afe5ef662303b6b710ea6ee1a944bad0d}} 
+\index{Bmw@{Bmw}!token\_type@{token\_type}}
+\index{token\_type@{token\_type}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{token\_type}{token\_type}}
+{\footnotesize\ttfamily token\+\_\+type}
+
+\mbox{\Hypertarget{classBmw_1_1Bmw_a0637a204a383bee69b03919bce9e8c3d}\label{classBmw_1_1Bmw_a0637a204a383bee69b03919bce9e8c3d}} 
+\index{Bmw@{Bmw}!vin@{vin}}
+\index{vin@{vin}!Bmw@{Bmw}}
+\doxysubsubsection{\texorpdfstring{vin}{vin}}
+{\footnotesize\ttfamily vin}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ \+ /grand-\/theft-\/app-\/2.\+0/gta2\+Tool/src/\mbox{\hyperlink{Bmw_8py}{Bmw.\+py}}\end{DoxyCompactItemize}
